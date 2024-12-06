@@ -1,0 +1,39 @@
+router1:
+  hostname: 192.168.100.121
+  port: 33286
+  username: wheliver
+  password: class
+  platform: cisco_ios_telnet
+  connection_options:
+    netmiko:
+      extras:
+        secret: pucmm1
+        global_delay_factor: 2
+        fast_cli: False
+        timeout: 100
+        conn_timeout: 50
+        banner_timeout: 50
+        auth_timeout: 50
+        allow_agent: False
+        use_keys: False
+        pkey: null
+
+router2:
+  hostname: 192.168.100.121
+  port: 33310
+  username: wheliver
+  password: class
+  platform: cisco_ios_telnet
+  connection_options:
+    netmiko:
+      extras:
+        secret: pucmm1
+        global_delay_factor: 2
+        fast_cli: False
+        timeout: 100
+        conn_timeout: 50
+        banner_timeout: 50
+        auth_timeout: 50
+        allow_agent: False
+        use_keys: False
+        pkey: null

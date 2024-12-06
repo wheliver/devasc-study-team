@@ -1,0 +1,306 @@
+{
+    "root": {
+        "hostname": "s7",
+        "ip": "unknown",
+        "priority": "1",
+        "mac": null,
+        "bridge_id": {
+            "priority": "1",
+            "mac": null,
+            "is_root": true
+        },
+        "root_id": {
+            "priority": "1",
+            "mac": null,
+            "cost": null,
+            "port": null
+        },
+        "connections": [
+            {
+                "connected_to": "unknown",
+                "via_port": "Et0/0",
+                "remote_port": "unknown",
+                "vlan": "VLAN0001",
+                "role": "Desg",
+                "state": "FWD",
+                "platform": "unknown",
+                "capability": "unknown"
+            },
+            {
+                "connected_to": "s63",
+                "via_port": "Et0/1",
+                "remote_port": "Et0/0",
+                "vlan": "VLAN0001",
+                "role": "Desg",
+                "state": "FWD",
+                "platform": "Eth",
+                "capability": "R S I Linux Uni"
+            },
+            {
+                "connected_to": "s6",
+                "via_port": "Et0/2",
+                "remote_port": "Et0/2",
+                "vlan": "VLAN0001",
+                "role": "Desg",
+                "state": "FWD",
+                "platform": "Eth",
+                "capability": "R S I Linux Uni"
+            },
+            {
+                "connected_to": "s62",
+                "via_port": "Et0/3",
+                "remote_port": "Et0/2",
+                "vlan": "VLAN0001",
+                "role": "Desg",
+                "state": "FWD",
+                "platform": "Eth",
+                "capability": "R S I Linux Uni"
+            }
+        ],
+        "inter_switch_links": [],
+        "is_root": true
+    },
+    "switches": [
+        {
+            "hostname": "s6",
+            "ip": "unknown",
+            "priority": "32769",
+            "mac": null,
+            "bridge_id": {
+                "priority": "32769",
+                "mac": null,
+                "is_root": false
+            },
+            "root_id": {
+                "priority": "1",
+                "mac": null,
+                "cost": null,
+                "port": null
+            },
+            "connections": [
+                {
+                    "connected_to": "unknown",
+                    "via_port": "Et0/0",
+                    "remote_port": "unknown",
+                    "vlan": "VLAN0001",
+                    "role": "Desg",
+                    "state": "FWD",
+                    "platform": "unknown",
+                    "capability": "unknown"
+                },
+                {
+                    "connected_to": "s62",
+                    "via_port": "Et0/1",
+                    "remote_port": "Et0/1",
+                    "vlan": "VLAN0001",
+                    "role": "Desg",
+                    "state": "FWD",
+                    "platform": "Eth",
+                    "capability": "R S I Linux Uni"
+                },
+                {
+                    "connected_to": "s7",
+                    "via_port": "Et0/2",
+                    "remote_port": "Et0/2",
+                    "vlan": "VLAN0001",
+                    "role": "Root",
+                    "state": "FWD",
+                    "platform": "Eth",
+                    "capability": "R S I Linux Uni"
+                },
+                {
+                    "connected_to": "s63",
+                    "via_port": "Et0/3",
+                    "remote_port": "Et0/2",
+                    "vlan": "VLAN0001",
+                    "role": "Desg",
+                    "state": "FWD",
+                    "platform": "Eth",
+                    "capability": "R S I Linux Uni"
+                }
+            ],
+            "inter_switch_links": []
+        },
+        {
+            "hostname": "s7",
+            "ip": "unknown",
+            "priority": "1",
+            "mac": null,
+            "bridge_id": {
+                "priority": "1",
+                "mac": null,
+                "is_root": true
+            },
+            "root_id": {
+                "priority": "1",
+                "mac": null,
+                "cost": null,
+                "port": null
+            },
+            "connections": [
+                {
+                    "connected_to": "unknown",
+                    "via_port": "Et0/0",
+                    "remote_port": "unknown",
+                    "vlan": "VLAN0001",
+                    "role": "Desg",
+                    "state": "FWD",
+                    "platform": "unknown",
+                    "capability": "unknown"
+                },
+                {
+                    "connected_to": "s63",
+                    "via_port": "Et0/1",
+                    "remote_port": "Et0/0",
+                    "vlan": "VLAN0001",
+                    "role": "Desg",
+                    "state": "FWD",
+                    "platform": "Eth",
+                    "capability": "R S I Linux Uni"
+                },
+                {
+                    "connected_to": "s6",
+                    "via_port": "Et0/2",
+                    "remote_port": "Et0/2",
+                    "vlan": "VLAN0001",
+                    "role": "Desg",
+                    "state": "FWD",
+                    "platform": "Eth",
+                    "capability": "R S I Linux Uni"
+                },
+                {
+                    "connected_to": "s62",
+                    "via_port": "Et0/3",
+                    "remote_port": "Et0/2",
+                    "vlan": "VLAN0001",
+                    "role": "Desg",
+                    "state": "FWD",
+                    "platform": "Eth",
+                    "capability": "R S I Linux Uni"
+                }
+            ],
+            "inter_switch_links": [],
+            "is_root": true
+        },
+        {
+            "hostname": "s62",
+            "ip": "unknown",
+            "priority": "32769",
+            "mac": null,
+            "bridge_id": {
+                "priority": "32769",
+                "mac": null,
+                "is_root": false
+            },
+            "root_id": {
+                "priority": "1",
+                "mac": null,
+                "cost": null,
+                "port": null
+            },
+            "connections": [
+                {
+                    "connected_to": "s63",
+                    "via_port": "Et0/0",
+                    "remote_port": "Et0/1",
+                    "vlan": "VLAN0001",
+                    "role": "Desg",
+                    "state": "FWD",
+                    "platform": "Eth",
+                    "capability": "R S I Linux Uni"
+                },
+                {
+                    "connected_to": "s6",
+                    "via_port": "Et0/1",
+                    "remote_port": "Et0/1",
+                    "vlan": "VLAN0001",
+                    "role": "Altn",
+                    "state": "BLK",
+                    "platform": "Eth",
+                    "capability": "R S I Linux Uni"
+                },
+                {
+                    "connected_to": "s7",
+                    "via_port": "Et0/2",
+                    "remote_port": "Et0/3",
+                    "vlan": "VLAN0001",
+                    "role": "Root",
+                    "state": "FWD",
+                    "platform": "Eth",
+                    "capability": "R S I Linux Uni"
+                },
+                {
+                    "connected_to": "unknown",
+                    "via_port": "Et0/3",
+                    "remote_port": "unknown",
+                    "vlan": "VLAN0001",
+                    "role": "Desg",
+                    "state": "FWD",
+                    "platform": "unknown",
+                    "capability": "unknown"
+                }
+            ],
+            "inter_switch_links": []
+        },
+        {
+            "hostname": "s63",
+            "ip": "unknown",
+            "priority": "32769",
+            "mac": null,
+            "bridge_id": {
+                "priority": "32769",
+                "mac": null,
+                "is_root": false
+            },
+            "root_id": {
+                "priority": "1",
+                "mac": null,
+                "cost": null,
+                "port": null
+            },
+            "connections": [
+                {
+                    "connected_to": "s7",
+                    "via_port": "Et0/0",
+                    "remote_port": "Et0/1",
+                    "vlan": "VLAN0001",
+                    "role": "Root",
+                    "state": "FWD",
+                    "platform": "Eth",
+                    "capability": "R S I Linux Uni"
+                },
+                {
+                    "connected_to": "s62",
+                    "via_port": "Et0/1",
+                    "remote_port": "Et0/0",
+                    "vlan": "VLAN0001",
+                    "role": "Altn",
+                    "state": "BLK",
+                    "platform": "Eth",
+                    "capability": "R S I Linux Uni"
+                },
+                {
+                    "connected_to": "s6",
+                    "via_port": "Et0/2",
+                    "remote_port": "Et0/3",
+                    "vlan": "VLAN0001",
+                    "role": "Altn",
+                    "state": "BLK",
+                    "platform": "Eth",
+                    "capability": "R S I Linux Uni"
+                },
+                {
+                    "connected_to": "unknown",
+                    "via_port": "Et0/3",
+                    "remote_port": "unknown",
+                    "vlan": "VLAN0001",
+                    "role": "Desg",
+                    "state": "FWD",
+                    "platform": "unknown",
+                    "capability": "unknown"
+                }
+            ],
+            "inter_switch_links": []
+        }
+    ]
+}

@@ -1,0 +1,1108 @@
+2024-10-23 22:26:41,162:ERROR:Error al conectar al dispositivo: Login failed: 192.168.100.121
+2024-10-23 22:26:41,162:ERROR:Error durante el proceso principal: Login failed: 192.168.100.121
+2024-10-23 22:27:42,145:ERROR:Error al conectar al dispositivo: Login failed: 192.168.100.121
+2024-10-23 22:27:42,145:ERROR:Error durante el proceso principal: Login failed: 192.168.100.121
+2024-10-23 22:29:03,454:ERROR:Error al conectar al dispositivo: Login failed: 192.168.100.121
+2024-10-23 22:29:03,454:ERROR:Error durante el proceso principal: Login failed: 192.168.100.121
+2024-10-23 22:29:43,417:ERROR:Error al conectar al dispositivo: Login failed: 192.168.100.121
+2024-10-23 22:29:43,418:ERROR:Error durante el proceso principal: Login failed: 192.168.100.121
+2024-10-23 22:35:52,517:INFO:Conectado al dispositivo 192.168.100.121 con éxito.
+2024-10-23 22:35:52,517:ERROR:Error al cargar la configuración de puertos: [Errno 2] No such file or directory: 'ports_config.json'
+2024-10-23 22:35:52,517:ERROR:Error durante el proceso principal: [Errno 2] No such file or directory: 'ports_config.json'
+2024-10-23 22:39:24,811:INFO:dispositivo  {'device_type': 'cisco_ios_telnet', 'host': '192.168.100.121', 'port': 33310, 'username': 'wheliver', 'password': 'class', 'timeout': 100, 'fast_cli': False, 'secret': 'pucmm1'}.
+2024-10-23 22:39:27,577:INFO:Conectado al dispositivo 192.168.100.121 con éxito.
+2024-10-23 22:39:27,577:ERROR:Error al cargar la configuración de puertos: [Errno 2] No such file or directory: 'ports_config.json'
+2024-10-23 22:39:27,577:ERROR:Error durante el proceso principal: [Errno 2] No such file or directory: 'ports_config.json'
+2024-10-23 22:40:54,476:INFO:dispositivo  {'device_type': 'cisco_ios_telnet', 'host': '192.168.100.121', 'port': 33310, 'username': 'wheliver', 'password': 'class', 'timeout': 100, 'fast_cli': False, 'secret': 'pucmm1'}.
+2024-10-23 22:40:54,476:INFO:dispositivo  {'device_type': 'cisco_ios_telnet', 'host': '192.168.100.121', 'port': 33310, 'username': 'wheliver', 'password': 'class', 'timeout': 100, 'fast_cli': False, 'secret': 'pucmm1'}.
+2024-10-23 22:40:57,246:INFO:Conectado al dispositivo 192.168.100.121 con éxito.
+2024-10-23 22:40:57,246:ERROR:Error al cargar la configuración de puertos: [Errno 2] No such file or directory: 'ports_config.json'
+2024-10-23 22:40:57,246:ERROR:Error durante el proceso principal: [Errno 2] No such file or directory: 'ports_config.json'
+2024-10-23 22:41:11,244:INFO:dispositivo  {'device_type': 'cisco_ios_telnet', 'host': '192.168.100.121', 'port': 33310, 'username': 'wheliver', 'password': 'class', 'timeout': 100, 'fast_cli': False, 'secret': 'pucmm1'}.
+2024-10-23 22:41:45,100:INFO:dispositivo  {'device_type': 'cisco_ios_telnet', 'host': '192.168.100.121', 'port': 33310, 'username': 'wheliver', 'password': 'class', 'timeout': 100, 'fast_cli': False, 'secret': 'pucmm1'}.
+2024-10-23 22:41:47,865:INFO:Conectado al dispositivo 192.168.100.121 con éxito.
+2024-10-23 22:41:47,865:ERROR:Error al cargar la configuración de puertos: [Errno 2] No such file or directory: 'ports_config.json'
+2024-10-23 22:41:47,865:ERROR:Error durante el proceso principal: [Errno 2] No such file or directory: 'ports_config.json'
+2024-10-23 22:41:54,420:INFO:dispositivo  <method-wrapper '__str__' of dict object at 0x7f0fb68014c0>.
+2024-10-23 22:44:24,908:INFO:dispositivo  {'device_type': 'cisco_ios_telnet', 'host': '192.168.100.121', 'port': 33310, 'username': 'wheliver', 'password': 'class', 'timeout': 100, 'fast_cli': False, 'secret': ''}.
+2024-10-23 22:44:27,682:INFO:Conectado al dispositivo 192.168.100.121 con éxito.
+2024-10-23 22:44:27,682:ERROR:Error al cargar la configuración de puertos: [Errno 2] No such file or directory: 'ports_config.json'
+2024-10-23 22:44:27,682:ERROR:Error durante el proceso principal: [Errno 2] No such file or directory: 'ports_config.json'
+2024-10-23 22:44:33,897:INFO:Conectado al dispositivo 192.168.100.121 con éxito.
+2024-10-23 22:44:33,897:ERROR:Error al cargar la configuración de puertos: [Errno 2] No such file or directory: 'ports_config.json'
+2024-10-23 22:44:33,897:ERROR:Error durante el proceso principal: [Errno 2] No such file or directory: 'ports_config.json'
+2024-10-23 22:45:09,217:INFO:Conectado al dispositivo 192.168.100.121 con éxito.
+2024-10-23 22:45:09,217:ERROR:Error al cargar la configuración de puertos: [Errno 2] No such file or directory: 'ports_config.json'
+2024-10-23 22:45:09,217:ERROR:Error durante el proceso principal: [Errno 2] No such file or directory: 'ports_config.json'
+2024-10-23 22:48:49,884:ERROR:Error al conectar al dispositivo: 
+
+Pattern not detected: 'wheliver' in output.
+
+Things you might try to fix this:
+1. Adjust the regex pattern to better identify the terminating string. Note, in
+many situations the pattern is automatically based on the network device's prompt.
+2. Increase the read_timeout to a larger value.
+
+You can also look at the Netmiko session_log or debug log for more information.
+
+
+2024-10-23 22:48:49,884:ERROR:Error durante el proceso principal: 
+
+Pattern not detected: 'wheliver' in output.
+
+Things you might try to fix this:
+1. Adjust the regex pattern to better identify the terminating string. Note, in
+many situations the pattern is automatically based on the network device's prompt.
+2. Increase the read_timeout to a larger value.
+
+You can also look at the Netmiko session_log or debug log for more information.
+
+
+2024-10-23 22:54:33,156:ERROR:Error al conectar al dispositivo: BaseConnection.__init__() got an unexpected keyword argument 'read_timeout'
+2024-10-23 22:54:33,160:ERROR:Error durante el proceso principal: BaseConnection.__init__() got an unexpected keyword argument 'read_timeout'
+2024-10-23 22:55:00,680:INFO:Conectado al dispositivo 192.168.100.121 con éxito.
+2024-10-23 22:55:00,853:ERROR:Error al cargar la configuración de puertos: [Errno 2] No such file or directory: 'ports_config.json'
+2024-10-23 22:55:00,853:ERROR:Error durante el proceso principal: [Errno 2] No such file or directory: 'ports_config.json'
+2024-10-23 22:56:23,955:INFO:Conectado al dispositivo 192.168.100.121 con éxito.
+2024-10-23 22:56:23,956:ERROR:Error al cargar la configuración de puertos: [Errno 2] No such file or directory: 'ports_config.json'
+2024-10-23 22:56:23,956:ERROR:Error durante el proceso principal: [Errno 2] No such file or directory: 'ports_config.json'
+2024-10-23 22:57:08,104:INFO:Conectado al dispositivo 192.168.100.121 con éxito.
+2024-10-23 22:57:08,104:ERROR:Error al cargar la configuración de puertos: [Errno 2] No such file or directory: 'ports_config.json'
+2024-10-23 22:57:08,104:ERROR:Error durante el proceso principal: [Errno 2] No such file or directory: 'ports_config.json'
+2024-10-23 22:59:56,773:INFO:Conectado al dispositivo 192.168.100.121 con éxito.
+2024-10-23 22:59:56,773:INFO:Configuración de puertos cargada exitosamente.
+2024-10-23 22:59:59,092:INFO:Configuración aplicada al puerto GigabitEthernet0/1.
+2024-10-23 23:00:00,540:INFO:Verificación de seguridad en GigabitEthernet0/1:
+                ^
+% Invalid input detected at '^' marker.
+
+wheliver#
+2024-10-23 23:00:01,977:INFO:Configuración aplicada al puerto GigabitEthernet0/2.
+2024-10-23 23:00:03,836:INFO:Verificación de seguridad en GigabitEthernet0/2:
+                ^
+% Invalid input detected at '^' marker.
+
+wheliver#
+2024-10-23 23:00:03,958:INFO:Proceso completado exitosamente.
+2024-10-23 23:09:30,488:INFO:Conectado al dispositivo 192.168.100.121 con éxito.
+2024-10-23 23:09:30,492:INFO:Configuración de puertos cargada exitosamente.
+2024-10-23 23:09:31,838:INFO:Configuración aplicada al puerto GigabitEthernet0/1.
+2024-10-23 23:09:33,661:INFO:Configuración actual de GigabitEthernet0/1:
+                                        ^
+% Invalid input detected at '^' marker.
+
+wheliver#
+whelive
+2024-10-23 23:09:34,447:INFO:Configuración aplicada al puerto GigabitEthernet0/2.
+2024-10-23 23:09:35,871:INFO:Configuración actual de GigabitEthernet0/2:
+                                        ^
+% Invalid input detected at '^' marker.
+
+wheliver#
+whelive
+2024-10-23 23:09:35,932:INFO:Proceso completado exitosamente.
+2024-10-23 23:16:23,001:INFO:Conectado al dispositivo 192.168.100.121 con éxito.
+2024-10-23 23:16:24,565:INFO:Puertos disponibles:
+Interface                  IP-Address      OK? Method Status                Protocol
+Ethernet0/0                192.168.100.121 YES NVRAM  up                    up      
+Ethernet0/1                unassigned      YES NVRAM  administratively down down    
+Ethernet0/2                unassigned      YES NVRAM  administratively down down    
+Ethernet0/3                unassigned      YES NVRAM  administratively down down    
+Loopback0                  10.0.0.1        YES manual up                    up      
+wheliver#
+2024-10-23 23:16:24,566:INFO:Configuración de puertos cargada exitosamente.
+2024-10-23 23:16:25,789:INFO:Configuración aplicada al puerto Ethernet0/0.
+2024-10-23 23:16:27,349:INFO:Configuración actual de Ethernet0/0:
+Building configuration...
+
+Current configuration : 87 bytes
+!
+interface Ethernet0/0
+ ip address 192.168.100.121 255.255.255.0
+ no mop enabled
+end
+
+wheliver#
+2024-10-23 23:16:28,114:INFO:Configuración aplicada al puerto Ethernet0/1.
+2024-10-23 23:16:30,814:INFO:Configuración actual de Ethernet0/1:
+Building configuration...
+
+Current configuration : 54 bytes
+!
+interface Ethernet0/1
+ no ip address
+ shutdown
+end
+
+wheliver#
+2024-10-23 23:16:31,588:INFO:Configuración aplicada al puerto Ethernet0/2.
+2024-10-23 23:16:33,088:INFO:Configuración actual de Ethernet0/2:
+Building configuration...
+
+Current configuration : 54 bytes
+!
+interface Ethernet0/2
+ no ip address
+ shutdown
+end
+
+wheliver#
+2024-10-23 23:16:34,059:INFO:Configuración aplicada al puerto Ethernet0/3.
+2024-10-23 23:16:35,507:INFO:Configuración actual de Ethernet0/3:
+Building configuration...
+
+Current configuration : 54 bytes
+!
+interface Ethernet0/3
+ no ip address
+ shutdown
+end
+
+wheliver#
+wheliver#
+*Oct 24 03:16:34.001: %SYS-5-CONFIG_I: Configured f
+2024-10-23 23:16:36,474:INFO:Configuración aplicada al puerto Loopback0.
+2024-10-23 23:16:37,923:INFO:Configuración actual de Loopback0:
+Building configuration...
+
+Current configuration : 95 bytes
+!
+interface Loopback0
+ description Creado por Wheliver
+ ip address 10.0.0.1 255.255.255.0
+end
+
+wheliver#
+wheliv
+2024-10-23 23:16:37,963:INFO:Proceso completado exitosamente.
+2024-10-23 23:20:33,716:INFO:Conectado al dispositivo 192.168.100.121 con éxito.
+2024-10-23 23:20:35,290:INFO:Puertos disponibles:
+Interface                  IP-Address      OK? Method Status                Protocol
+Ethernet0/0                192.168.100.121 YES NVRAM  up                    up      
+Ethernet0/1                unassigned      YES NVRAM  administratively down down    
+Ethernet0/2                unassigned      YES NVRAM  administratively down down    
+Ethernet0/3                unassigned      YES NVRAM  administratively down down    
+Loopback0                  10.0.0.1        YES manual up                    up      
+wheliver#
+2024-10-23 23:20:35,290:INFO:Configuración de puertos cargada exitosamente.
+2024-10-23 23:20:36,524:INFO:Configuración aplicada al puerto Ethernet0/0.
+2024-10-23 23:20:37,947:INFO:Verificación de seguridad en Ethernet0/0:
+                ^
+% Invalid input detected at '^' marker.
+
+wheliver#
+wheli
+2024-10-23 23:20:38,712:INFO:Configuración aplicada al puerto Ethernet0/1.
+2024-10-23 23:20:40,135:INFO:Verificación de seguridad en Ethernet0/1:
+                ^
+% Invalid input detected at '^' marker.
+
+wheliver#
+wheli
+2024-10-23 23:20:40,849:INFO:Configuración aplicada al puerto Ethernet0/2.
+2024-10-23 23:20:42,273:INFO:Verificación de seguridad en Ethernet0/2:
+                ^
+% Invalid input detected at '^' marker.
+
+wheliver#
+wheli
+2024-10-23 23:20:43,292:INFO:Configuración aplicada al puerto Ethernet0/3.
+2024-10-23 23:20:55,011:ERROR:Error al verificar la configuración de seguridad en el puerto Ethernet0/3: 
+Pattern not detected: '\\*Oct\\ 24\\ 03:20:43\\.238:\\ %SYS\\-5\\-CONFIG_I:\\ Configured\\ from\\ console\\ by\\ c' in output.
+
+Things you might try to fix this:
+1. Explicitly set your pattern using the expect_string argument.
+2. Increase the read_timeout to a larger value.
+
+You can also look at the Netmiko session_log or debug log for more information.
+
+
+2024-10-23 23:20:55,011:ERROR:Error durante el proceso principal: 
+Pattern not detected: '\\*Oct\\ 24\\ 03:20:43\\.238:\\ %SYS\\-5\\-CONFIG_I:\\ Configured\\ from\\ console\\ by\\ c' in output.
+
+Things you might try to fix this:
+1. Explicitly set your pattern using the expect_string argument.
+2. Increase the read_timeout to a larger value.
+
+You can also look at the Netmiko session_log or debug log for more information.
+
+
+2024-10-23 23:24:55,195:INFO:Conectado al dispositivo 192.168.100.121 con éxito.
+2024-10-23 23:24:56,186:INFO:Puertos disponibles:
+Interface                  IP-Address      OK? Method Status                Protocol
+Ethernet0/0                192.168.100.121 YES NVRAM  up                    up      
+Ethernet0/1                unassigned      YES NVRAM  administratively down down    
+Ethernet0/2                unassigned      YES NVRAM  administratively down down    
+Ethernet0/3                unassigned      YES NVRAM  administratively down down    
+Loopback0                  10.0.0.1        YES manual up                    up      
+wheliver#
+2024-10-23 23:24:56,186:INFO:Configuración de puertos cargada exitosamente.
+2024-10-23 23:24:57,421:INFO:Configuración aplicada al puerto Ethernet0/0.
+2024-10-23 23:24:58,671:INFO:Configuración actual de Ethernet0/0:
+Building configuration...
+
+Current configuration : 87 bytes
+!
+interface Ethernet0/0
+ ip address 192.168.100.121 255.255.255.0
+ no mop enabled
+end
+
+wheliver#
+2024-10-23 23:24:59,436:INFO:Configuración aplicada al puerto Ethernet0/1.
+2024-10-23 23:25:00,285:INFO:Configuración actual de Ethernet0/1:
+Building configuration...
+
+Current configuration : 54 bytes
+!
+interface Ethernet0/1
+ no ip address
+ shutdown
+end
+
+wheliver#
+2024-10-23 23:25:00,980:INFO:Configuración aplicada al puerto Ethernet0/2.
+2024-10-23 23:25:04,630:INFO:Configuración actual de Ethernet0/2:
+Building configuration...
+
+Current configuration : 54 bytes
+!
+interface Ethernet0/2
+ no ip address
+ shutdown
+end
+
+wheliver#
+2024-10-23 23:25:05,597:INFO:Configuración aplicada al puerto Ethernet0/3.
+2024-10-23 23:25:06,446:INFO:Configuración actual de Ethernet0/3:
+Building configuration...
+
+Current configuration : 54 bytes
+!
+interface Ethernet0/3
+ no ip address
+ shutdown
+end
+
+wheliver#
+2024-10-23 23:25:07,433:INFO:Configuración aplicada al puerto Loopback0.
+2024-10-23 23:25:08,232:INFO:Configuración actual de Loopback0:
+Building configuration...
+
+Current configuration : 95 bytes
+!
+interface Loopback0
+ description Creado por Wheliver
+ ip address 10.0.0.1 255.255.255.0
+end
+
+wheliver#
+wheliv
+2024-10-23 23:25:08,273:INFO:Proceso completado exitosamente.
+2024-10-24 13:18:31,235:ERROR:Error al conectar al dispositivo: [Errno 111] Connection refused
+2024-10-24 13:18:31,236:ERROR:Error durante el proceso principal: [Errno 111] Connection refused
+2024-10-24 13:19:06,148:INFO:Conectado al dispositivo 192.168.100.121 con éxito.
+2024-10-24 13:19:07,696:INFO:Puertos disponibles:
+Interface              IP-Address      OK? Method Status                Protocol
+Ethernet0/0            unassigned      YES unset  up                    up      
+Ethernet0/1            unassigned      YES unset  up                    up      
+Ethernet0/2            unassigned      YES unset  up                    up      
+Ethernet0/3            unassigned      YES unset  up                    up      
+Switch#
+2024-10-24 13:19:07,700:INFO:Configuración de puertos cargada exitosamente.
+2024-10-24 13:19:09,809:INFO:Configuración aplicada al puerto Ethernet0/0.
+2024-10-24 13:19:11,314:INFO:Configuración actual de Ethernet0/0:
+Building configuration...
+
+Current configuration : 280 bytes
+!
+interface Ethernet0/0
+ switchport mode access
+ switchport port-security maximum 10
+ switchport port-security
+ switchport port-security violation restrict
+ switchport port-security mac-address aabb.cc01.e400
+ switchport port-security mac-address bee3.f4f3.ea83
+ duplex auto
+end
+
+Switch#
+Switch#
+*Oct 24 17:19:09.713: %SYS-5-CONFIG_I: Configured from console by console
+Swi
+2024-10-24 13:19:12,554:INFO:Configuración aplicada al puerto Ethernet0/1.
+2024-10-24 13:19:14,060:INFO:Configuración actual de Ethernet0/1:
+Building configuration...
+
+Current configuration : 280 bytes
+!
+interface Ethernet0/1
+ switchport mode access
+ switchport port-security maximum 10
+ switchport port-security
+ switchport port-security violation restrict
+ switchport port-security mac-address 0050.7966.6838
+ switchport port-security mac-address 1a5c.0153.9c89
+ duplex auto
+end
+
+Switch#
+Sw
+2024-10-24 13:19:15,156:INFO:Configuración aplicada al puerto Ethernet0/2.
+2024-10-24 13:19:26,871:ERROR:Error al verificar la configuración del puerto Ethernet0/2: 
+Pattern not detected: '\\*Oct\\ 24\\ 17:19:15\\.033:\\ %SYS\\-5\\-CONFIG_I:\\ Configured\\ from\\ console\\ by\\ c' in output.
+
+Things you might try to fix this:
+1. Explicitly set your pattern using the expect_string argument.
+2. Increase the read_timeout to a larger value.
+
+You can also look at the Netmiko session_log or debug log for more information.
+
+
+2024-10-24 13:19:26,871:ERROR:Error durante el proceso principal: 
+Pattern not detected: '\\*Oct\\ 24\\ 17:19:15\\.033:\\ %SYS\\-5\\-CONFIG_I:\\ Configured\\ from\\ console\\ by\\ c' in output.
+
+Things you might try to fix this:
+1. Explicitly set your pattern using the expect_string argument.
+2. Increase the read_timeout to a larger value.
+
+You can also look at the Netmiko session_log or debug log for more information.
+
+
+2024-10-24 13:22:50,030:INFO:Conectado al dispositivo 192.168.100.121 con éxito.
+2024-10-24 13:22:51,629:INFO:Puertos disponibles:
+Interface              IP-Address      OK? Method Status                Protocol
+Ethernet0/0            unassigned      YES unset  up                    up      
+Ethernet0/1            unassigned      YES unset  up                    up      
+Ethernet0/2            unassigned      YES unset  up                    up      
+Ethernet0/3            unassigned      YES unset  up                    up      
+Switch#
+2024-10-24 13:22:51,629:INFO:Configuración de puertos cargada exitosamente.
+2024-10-24 13:22:52,901:INFO:Configuración aplicada al puerto Ethernet0/0.
+2024-10-24 13:22:54,785:INFO:Configuración actual de Ethernet0/0:
+Building configuration...
+
+Current configuration : 280 bytes
+!
+interface Ethernet0/0
+ switchport mode access
+ switchport port-security maximum 10
+ switchport port-security
+ switchport port-security violation restrict
+ switchport port-security mac-address aabb.cc01.e400
+ switchport port-security mac-address bee3.f4f3.ea83
+ duplex auto
+end
+
+Switch#
+Sw
+2024-10-24 13:22:56,175:INFO:Configuración aplicada al puerto Ethernet0/1.
+2024-10-24 13:22:57,674:INFO:Configuración actual de Ethernet0/1:
+Building configuration...
+
+Current configuration : 280 bytes
+!
+interface Ethernet0/1
+ switchport mode access
+ switchport port-security maximum 10
+ switchport port-security
+ switchport port-security violation restrict
+ switchport port-security mac-address 0050.7966.6838
+ switchport port-security mac-address 1a5c.0153.9c89
+ duplex auto
+end
+
+Switch#
+Sw
+2024-10-24 13:23:12,877:ERROR:Error al aplicar configuración en Ethernet0/2: 
+
+Pattern not detected: 'interface\\ Ethernet0/2' in output.
+
+Things you might try to fix this:
+1. Adjust the regex pattern to better identify the terminating string. Note, in
+many situations the pattern is automatically based on the network device's prompt.
+2. Increase the read_timeout to a larger value.
+
+You can also look at the Netmiko session_log or debug log for more information.
+
+
+2024-10-24 13:23:12,877:ERROR:Error durante el proceso principal: 
+
+Pattern not detected: 'interface\\ Ethernet0/2' in output.
+
+Things you might try to fix this:
+1. Adjust the regex pattern to better identify the terminating string. Note, in
+many situations the pattern is automatically based on the network device's prompt.
+2. Increase the read_timeout to a larger value.
+
+You can also look at the Netmiko session_log or debug log for more information.
+
+
+2024-10-24 13:28:34,674:INFO:Conectado al dispositivo 192.168.100.121 con éxito.
+2024-10-24 13:28:36,222:INFO:Puertos disponibles:
+Interface              IP-Address      OK? Method Status                Protocol
+Ethernet0/0            unassigned      YES unset  up                    up      
+Ethernet0/1            unassigned      YES unset  up                    up      
+Ethernet0/2            unassigned      YES unset  up                    up      
+Ethernet0/3            unassigned      YES unset  up                    up      
+Switch#
+2024-10-24 13:28:36,222:INFO:Configuración de puertos cargada exitosamente.
+2024-10-24 13:28:36,224:ERROR:Error al aplicar configuración en Ethernet0/0: BaseConnection.send_config_set() got an unexpected keyword argument 'expect_string'
+2024-10-24 13:28:36,224:ERROR:Error durante el proceso principal: BaseConnection.send_config_set() got an unexpected keyword argument 'expect_string'
+2024-10-24 13:29:02,699:INFO:Conectado al dispositivo 192.168.100.121 con éxito.
+2024-10-24 13:29:04,796:INFO:Puertos disponibles:
+Interface              IP-Address      OK? Method Status                Protocol
+Ethernet0/0            unassigned      YES unset  up                    up      
+Ethernet0/1            unassigned      YES unset  up                    up      
+Ethernet0/2            unassigned      YES unset  up                    up      
+Ethernet0/3            unassigned      YES unset  up                    up      
+Switch#
+2024-10-24 13:29:04,796:INFO:Configuración de puertos cargada exitosamente.
+2024-10-24 13:29:06,098:INFO:Configuración aplicada al puerto Ethernet0/0.
+2024-10-24 13:29:07,576:INFO:Configuración actual de Ethernet0/0:
+Building configuration...
+
+Current configuration : 280 bytes
+!
+interface Ethernet0/0
+ switchport mode access
+ switchport port-security maximum 10
+ switchport port-security
+ switchport port-security violation restrict
+ switchport port-security mac-address aabb.cc01.e400
+ switchport port-security mac-address bee3.f4f3.ea83
+ duplex auto
+end
+
+Switch#
+Swi
+2024-10-24 13:29:08,773:INFO:Configuración aplicada al puerto Ethernet0/1.
+2024-10-24 13:29:10,260:INFO:Configuración actual de Ethernet0/1:
+Building configuration...
+
+Current configuration : 280 bytes
+!
+interface Ethernet0/1
+ switchport mode access
+ switchport port-security maximum 10
+ switchport port-security
+ switchport port-security violation restrict
+ switchport port-security mac-address 0050.7966.6838
+ switchport port-security mac-address 1a5c.0153.9c89
+ duplex auto
+end
+
+Switch#
+Sw
+2024-10-24 13:29:11,254:INFO:Configuración aplicada al puerto Ethernet0/2.
+2024-10-24 13:29:12,742:INFO:Configuración actual de Ethernet0/2:
+Building configuration...
+
+Current configuration : 227 bytes
+!
+interface Ethernet0/2
+ switchport mode access
+ switchport port-security maximum 10
+ switchport port-security
+ switchport port-security violation restrict
+ switchport port-security mac-address 36ee.4f84.b835
+ duplex auto
+end
+
+Switch#
+Switc
+2024-10-24 13:29:13,797:INFO:Configuración aplicada al puerto Ethernet0/3.
+2024-10-24 13:29:15,705:INFO:Configuración actual de Ethernet0/3:
+Building configuration...
+
+Current configuration : 227 bytes
+!
+interface Ethernet0/3
+ switchport mode access
+ switchport port-security maximum 10
+ switchport port-security
+ switchport port-security violation restrict
+ switchport port-security mac-address 1615.2181.231c
+ duplex auto
+end
+
+Switch#
+Switc
+2024-10-24 13:29:15,746:INFO:Proceso completado exitosamente.
+2024-10-24 15:34:50,406:INFO:Conectado al dispositivo 192.168.100.121 con éxito.
+2024-10-24 15:34:51,985:INFO:Puertos disponibles:
+Interface              IP-Address      OK? Method Status                Protocol
+Ethernet0/0            unassigned      YES unset  up                    up      
+Ethernet0/1            unassigned      YES unset  up                    up      
+Ethernet0/2            unassigned      YES unset  up                    up      
+Ethernet0/3            unassigned      YES unset  up                    up      
+Switch#
+2024-10-24 15:34:51,986:INFO:Configuración de puertos cargada exitosamente.
+2024-10-24 15:34:51,987:ERROR:Error al aplicar configuración en Ethernet0/0: BaseConnection.send_config_set() got an unexpected keyword argument 'expect_string'
+2024-10-24 15:34:51,987:ERROR:Error durante el proceso principal: BaseConnection.send_config_set() got an unexpected keyword argument 'expect_string'
+2024-10-24 15:35:23,799:INFO:Conectado al dispositivo 192.168.100.121 con éxito.
+2024-10-24 15:35:25,374:INFO:Puertos disponibles:
+Interface              IP-Address      OK? Method Status                Protocol
+Ethernet0/0            unassigned      YES unset  up                    up      
+Ethernet0/1            unassigned      YES unset  up                    up      
+Ethernet0/2            unassigned      YES unset  up                    up      
+Ethernet0/3            unassigned      YES unset  up                    up      
+Switch#
+2024-10-24 15:35:25,374:INFO:Configuración de puertos cargada exitosamente.
+2024-10-24 15:37:06,019:ERROR:Error al aplicar configuración en Ethernet0/0: 
+
+Pattern not detected: '\\#\\ Configuración\\ de\\ port\\-security\\ estándar\\ con\\ MACs\\ permitidas' in output.
+
+Things you might try to fix this:
+1. Adjust the regex pattern to better identify the terminating string. Note, in
+many situations the pattern is automatically based on the network device's prompt.
+2. Increase the read_timeout to a larger value.
+
+You can also look at the Netmiko session_log or debug log for more information.
+
+
+2024-10-24 15:37:06,020:ERROR:Error durante el proceso principal: 
+
+Pattern not detected: '\\#\\ Configuración\\ de\\ port\\-security\\ estándar\\ con\\ MACs\\ permitidas' in output.
+
+Things you might try to fix this:
+1. Adjust the regex pattern to better identify the terminating string. Note, in
+many situations the pattern is automatically based on the network device's prompt.
+2. Increase the read_timeout to a larger value.
+
+You can also look at the Netmiko session_log or debug log for more information.
+
+
+2024-10-24 15:39:57,676:INFO:Conectado al dispositivo 192.168.100.121 con éxito.
+2024-10-24 15:39:59,320:INFO:Puertos disponibles:
+Interface              IP-Address      OK? Method Status                Protocol
+Ethernet0/0            unassigned      YES unset  up                    up      
+Ethernet0/1            unassigned      YES unset  up                    up      
+Ethernet0/2            unassigned      YES unset  up                    up      
+Ethernet0/3            unassigned      YES unset  up                    up      
+Switch#
+2024-10-24 15:39:59,321:INFO:Configuración de puertos cargada exitosamente.
+2024-10-24 15:41:31,359:INFO:Conectado al dispositivo 192.168.100.121 con éxito.
+2024-10-24 15:41:32,807:INFO:Puertos disponibles:
+                    ^
+% Invalid input detected at '^' marker.
+
+Switch(config-if)#
+Switch(co
+2024-10-24 15:41:32,807:INFO:Configuración de puertos cargada exitosamente.
+2024-10-24 15:41:33,073:INFO:Proceso completado exitosamente.
+2024-10-24 15:42:06,115:INFO:Conectado al dispositivo 192.168.100.121 con éxito.
+2024-10-24 15:42:07,709:INFO:Puertos disponibles:
+Interface              IP-Address      OK? Method Status                Protocol
+Ethernet0/0            unassigned      YES unset  up                    up      
+Ethernet0/1            unassigned      YES unset  up                    up      
+Ethernet0/2            unassigned      YES unset  up                    up      
+Ethernet0/3            unassigned      YES unset  up                    up      
+Switch#
+2024-10-24 15:42:07,710:INFO:Configuración de puertos cargada exitosamente.
+2024-10-24 15:42:09,262:INFO:Configuración aplicada al puerto Ethernet0/0.
+2024-10-24 15:42:10,771:INFO:Configuración actual de Ethernet0/0:
+Building configuration...
+
+Current configuration : 280 bytes
+!
+interface Ethernet0/0
+ switchport mode access
+ switchport port-security maximum 10
+ switchport port-security
+ switchport port-security violation restrict
+ switchport port-security mac-address aabb.cc01.e400
+ switchport port-security mac-address bee3.f4f3.ea83
+ duplex auto
+end
+
+Switch#
+Sw
+2024-10-24 15:43:01,281:INFO:Conectado al dispositivo 192.168.100.121 con éxito.
+2024-10-24 15:43:02,856:INFO:Puertos disponibles:
+Interface              IP-Address      OK? Method Status                Protocol
+Ethernet0/0            unassigned      YES unset  up                    up      
+Ethernet0/1            unassigned      YES unset  up                    up      
+Ethernet0/2            unassigned      YES unset  up                    up      
+Ethernet0/3            unassigned      YES unset  up                    up      
+Switch#
+2024-10-24 15:43:02,856:INFO:Configuración de puertos cargada exitosamente.
+2024-10-24 15:43:04,305:INFO:Configuración aplicada al puerto Ethernet0/0.
+2024-10-24 15:43:07,014:INFO:Configuración actual de Ethernet0/0:
+Building configuration...
+
+Current configuration : 280 bytes
+!
+interface Ethernet0/0
+ switchport mode access
+ switchport port-security maximum 10
+ switchport port-security
+ switchport port-security violation restrict
+ switchport port-security mac-address aabb.cc01.e400
+ switchport port-security mac-address bee3.f4f3.ea83
+ duplex auto
+end
+
+Switch#
+Sw
+2024-10-24 15:43:07,926:INFO:Configuración aplicada al puerto Ethernet0/1.
+2024-10-24 15:43:09,445:INFO:Configuración actual de Ethernet0/1:
+Building configuration...
+
+Current configuration : 280 bytes
+!
+interface Ethernet0/1
+ switchport mode access
+ switchport port-security maximum 10
+ switchport port-security
+ switchport port-security violation restrict
+ switchport port-security mac-address 0050.7966.6838
+ switchport port-security mac-address 1a5c.0153.9c89
+ duplex auto
+end
+
+Switch#
+Sw
+2024-10-24 15:43:10,631:INFO:Configuración aplicada al puerto Ethernet0/2.
+2024-10-24 15:43:12,074:INFO:Configuración actual de Ethernet0/2:
+Building configuration...
+
+Current configuration : 227 bytes
+!
+interface Ethernet0/2
+ switchport mode access
+ switchport port-security maximum 10
+ switchport port-security
+ switchport port-security violation restrict
+ switchport port-security mac-address 36ee.4f84.b835
+ duplex auto
+end
+
+Switch#
+Switc
+2024-10-24 15:43:13,260:INFO:Configuración aplicada al puerto Ethernet0/3.
+2024-10-24 15:43:15,158:INFO:Configuración actual de Ethernet0/3:
+Building configuration...
+
+Current configuration : 227 bytes
+!
+interface Ethernet0/3
+ switchport mode access
+ switchport port-security maximum 10
+ switchport port-security
+ switchport port-security violation restrict
+ switchport port-security mac-address 1615.2181.231c
+ duplex auto
+end
+
+Switch#
+Switc
+2024-10-24 15:43:15,219:INFO:Proceso completado exitosamente.
+2024-10-24 15:54:11,805:INFO:Conectado al dispositivo 192.168.100.121 con éxito.
+2024-10-24 15:54:13,399:INFO:Puertos disponibles:
+Interface              IP-Address      OK? Method Status                Protocol
+Ethernet0/0            unassigned      YES unset  up                    up      
+Ethernet0/1            unassigned      YES unset  up                    up      
+Ethernet0/2            unassigned      YES unset  up                    up      
+Ethernet0/3            unassigned      YES unset  up                    up      
+Switch#
+2024-10-24 15:54:13,400:INFO:Configuración de puertos cargada exitosamente.
+2024-10-24 15:54:13,582:INFO:Proceso completado exitosamente.
+2024-10-24 15:55:19,961:INFO:Conectado al dispositivo 192.168.100.121 con éxito.
+2024-10-24 15:55:22,395:INFO:Puertos disponibles:
+Interface              IP-Address      OK? Method Status                Protocol
+Ethernet0/0            unassigned      YES unset  up                    up      
+Ethernet0/1            unassigned      YES unset  up                    up      
+Ethernet0/2            unassigned      YES unset  up                    up      
+Ethernet0/3            unassigned      YES unset  up                    up      
+Switch#
+2024-10-24 15:55:22,395:INFO:Configuración de puertos cargada exitosamente.
+2024-10-24 15:55:22,577:INFO:Proceso completado exitosamente.
+2024-10-24 15:55:54,818:INFO:Conectado al dispositivo 192.168.100.121 con éxito.
+2024-10-24 15:55:56,387:INFO:Puertos disponibles:
+Interface              IP-Address      OK? Method Status                Protocol
+Ethernet0/0            unassigned      YES unset  up                    up      
+Ethernet0/1            unassigned      YES unset  up                    up      
+Ethernet0/2            unassigned      YES unset  up                    up      
+Ethernet0/3            unassigned      YES unset  up                    up      
+Switch#
+2024-10-24 15:55:56,387:INFO:Configuración de puertos cargada exitosamente.
+2024-10-24 15:55:57,414:INFO:Configuración aplicada al puerto Ethernet0/1.
+2024-10-24 15:55:58,922:INFO:Configuración actual de Ethernet0/1:
+Building configuration...
+
+Current configuration : 280 bytes
+!
+interface Ethernet0/1
+ switchport mode access
+ switchport port-security maximum 10
+ switchport port-security
+ switchport port-security violation restrict
+ switchport port-security mac-address 0050.7966.6838
+ switchport port-security mac-address 1a5c.0153.9c89
+ duplex auto
+end
+
+Switch#
+Sw
+2024-10-24 15:55:58,973:INFO:Proceso completado exitosamente.
+2024-10-24 16:02:09,887:INFO:Conectado al dispositivo 192.168.100.121 con éxito.
+2024-10-24 16:02:11,456:INFO:Puertos disponibles:
+Interface              IP-Address      OK? Method Status                Protocol
+Ethernet0/0            unassigned      YES unset  up                    up      
+Ethernet0/1            unassigned      YES unset  up                    up      
+Ethernet0/2            unassigned      YES unset  up                    up      
+Ethernet0/3            unassigned      YES unset  up                    up      
+Switch#
+2024-10-24 16:02:11,456:INFO:Configuración de puertos cargada exitosamente.
+2024-10-24 16:02:12,401:INFO:Configuración aplicada al puerto Ethernet0/0.
+2024-10-24 16:02:13,985:INFO:Configuración actual de Ethernet0/0:
+Building configuration...
+
+Current configuration : 254 bytes
+!
+interface Ethernet0/0
+ switchport mode access
+ switchport port-security maximum 10
+ switchport port-security violation restrict
+ switchport port-security mac-address aabb.cc01.e400
+ switchport port-security mac-address bee3.f4f3.ea83
+ duplex auto
+end
+
+Switch#
+2024-10-24 16:02:14,928:INFO:Configuración aplicada al puerto Ethernet0/2.
+2024-10-24 16:02:16,507:INFO:Configuración actual de Ethernet0/2:
+Building configuration...
+
+Current configuration : 201 bytes
+!
+interface Ethernet0/2
+ switchport mode access
+ switchport port-security maximum 10
+ switchport port-security violation restrict
+ switchport port-security mac-address 36ee.4f84.b835
+ duplex auto
+end
+
+Switch#
+Switch#
+*Oct 24 20:02:15.211: %SYS-5-CONFIG_I: Configured from console by console
+2024-10-24 16:02:17,451:INFO:Configuración aplicada al puerto Ethernet0/3.
+2024-10-24 16:02:18,959:INFO:Configuración actual de Ethernet0/3:
+Building configuration...
+
+Current configuration : 201 bytes
+!
+interface Ethernet0/3
+ switchport mode access
+ switchport port-security maximum 10
+ switchport port-security violation restrict
+ switchport port-security mac-address 1615.2181.231c
+ duplex auto
+end
+
+2024-10-24 16:02:19,030:INFO:Proceso completado exitosamente.
+2024-10-24 17:01:56,869:INFO:Conectado al dispositivo 192.168.100.121 con éxito.
+2024-10-24 17:01:58,512:INFO:Puertos disponibles:
+Interface              IP-Address      OK? Method Status                Protocol
+Ethernet0/0            unassigned      YES unset  up                    up      
+Ethernet0/1            unassigned      YES unset  up                    up      
+Ethernet0/2            unassigned      YES unset  up                    up      
+Ethernet0/3            unassigned      YES unset  up                    up      
+Switch#
+2024-10-24 17:01:58,513:INFO:Configuración de puertos cargada exitosamente.
+2024-10-24 17:01:59,469:INFO:Configuración aplicada al puerto Ethernet0/0.
+2024-10-24 17:02:01,053:INFO:Configuración actual de Ethernet0/0:
+Building configuration...
+
+Current configuration : 254 bytes
+!
+interface Ethernet0/0
+ switchport mode access
+ switchport port-security maximum 10
+ switchport port-security violation restrict
+ switchport port-security mac-address aabb.cc01.e400
+ switchport port-security mac-address bee3.f4f3.ea83
+ duplex auto
+end
+
+Switch#
+2024-10-24 17:02:02,010:INFO:Configuración aplicada al puerto Ethernet0/2.
+2024-10-24 17:02:13,728:ERROR:Error al verificar la configuración del puerto Ethernet0/2: 
+Pattern not detected: '\\*Oct\\ 24\\ 21:02:02\\.441:\\ %SYS\\-5\\-CONFIG_I:\\ Configured\\ from\\ console\\ by\\ c' in output.
+
+Things you might try to fix this:
+1. Explicitly set your pattern using the expect_string argument.
+2. Increase the read_timeout to a larger value.
+
+You can also look at the Netmiko session_log or debug log for more information.
+
+
+2024-10-24 17:02:13,728:ERROR:Error durante el proceso principal: 
+Pattern not detected: '\\*Oct\\ 24\\ 21:02:02\\.441:\\ %SYS\\-5\\-CONFIG_I:\\ Configured\\ from\\ console\\ by\\ c' in output.
+
+Things you might try to fix this:
+1. Explicitly set your pattern using the expect_string argument.
+2. Increase the read_timeout to a larger value.
+
+You can also look at the Netmiko session_log or debug log for more information.
+
+
+2024-10-24 17:02:37,630:INFO:Conectado al dispositivo 192.168.100.121 con éxito.
+2024-10-24 17:02:39,199:INFO:Puertos disponibles:
+Interface              IP-Address      OK? Method Status                Protocol
+Ethernet0/0            unassigned      YES unset  up                    up      
+Ethernet0/1            unassigned      YES unset  up                    up      
+Ethernet0/2            unassigned      YES unset  up                    up      
+Ethernet0/3            unassigned      YES unset  up                    up      
+Switch#
+2024-10-24 17:02:39,199:INFO:Configuración de puertos cargada exitosamente.
+2024-10-24 17:02:40,155:INFO:Configuración aplicada al puerto Ethernet0/0.
+2024-10-24 17:02:41,739:INFO:Configuración actual de Ethernet0/0:
+Building configuration...
+
+Current configuration : 254 bytes
+!
+interface Ethernet0/0
+ switchport mode access
+ switchport port-security maximum 10
+ switchport port-security violation restrict
+ switchport port-security mac-address aabb.cc01.e400
+ switchport port-security mac-address bee3.f4f3.ea83
+ duplex auto
+end
+
+Switch#
+2024-10-24 17:02:42,724:INFO:Configuración aplicada al puerto Ethernet0/1.
+2024-10-24 17:02:44,708:INFO:Configuración actual de Ethernet0/1:
+Building configuration...
+
+Current configuration : 254 bytes
+!
+interface Ethernet0/1
+ switchport mode access
+ switchport port-security maximum 10
+ switchport port-security violation restrict
+ switchport port-security mac-address 0050.7966.6838
+ switchport port-security mac-address 1a5c.0153.9c89
+ duplex auto
+end
+
+Switch#
+2024-10-24 17:02:45,724:INFO:Configuración aplicada al puerto Ethernet0/2.
+2024-10-24 17:02:57,429:ERROR:Error al verificar la configuración del puerto Ethernet0/2: 
+Pattern not detected: '\\*Oct\\ 24\\ 21:02:46\\.495:\\ %SYS\\-5\\-CONFIG_I:\\ Configured\\ from\\ console\\ by\\ c' in output.
+
+Things you might try to fix this:
+1. Explicitly set your pattern using the expect_string argument.
+2. Increase the read_timeout to a larger value.
+
+You can also look at the Netmiko session_log or debug log for more information.
+
+
+2024-10-24 17:02:57,429:ERROR:Error durante el proceso principal: 
+Pattern not detected: '\\*Oct\\ 24\\ 21:02:46\\.495:\\ %SYS\\-5\\-CONFIG_I:\\ Configured\\ from\\ console\\ by\\ c' in output.
+
+Things you might try to fix this:
+1. Explicitly set your pattern using the expect_string argument.
+2. Increase the read_timeout to a larger value.
+
+You can also look at the Netmiko session_log or debug log for more information.
+
+
+2024-10-24 20:12:06,616:INFO:Conectado al dispositivo 192.168.100.121 con éxito.
+2024-10-24 20:12:07,974:INFO:Puertos disponibles:
+Interface              IP-Address      OK? Method Status                Protocol
+Ethernet0/0            unassigned      YES unset  up                    up      
+Ethernet0/1            unassigned      YES unset  up                    up      
+Ethernet0/2            unassigned      YES unset  up                    up      
+Ethernet0/3            unassigned      YES unset  up                    up      
+Switch#
+2024-10-24 20:12:07,974:INFO:Configuración de puertos cargada exitosamente.
+2024-10-24 20:12:08,133:INFO:Configuración aplicada al puerto Ethernet0/0.
+2024-10-24 20:12:09,896:INFO:Configuración actual de Ethernet0/0:
+Building configuration...
+
+Current configuration : 209 bytes
+!
+interface Ethernet0/0
+ switchport mode access
+ switchport port-security maximum 10
+ switchport port-security mac-address aabb.cc01.e400
+ switchport port-security mac-address bee3.f4f3.ea83
+ duplex auto
+end
+
+Switch#
+2024-10-24 20:12:10,073:INFO:Configuración aplicada al puerto Ethernet0/1.
+2024-10-24 20:12:11,410:INFO:Configuración actual de Ethernet0/1:
+Building configuration...
+
+Current configuration : 66 bytes
+!
+interface Ethernet0/1
+ switchport mode access
+ duplex auto
+end
+
+Switch#
+2024-10-24 20:12:11,577:INFO:Configuración aplicada al puerto Ethernet0/2.
+2024-10-24 20:12:13,315:INFO:Configuración actual de Ethernet0/2:
+Building configuration...
+
+Current configuration : 66 bytes
+!
+interface Ethernet0/2
+ switchport mode access
+ duplex auto
+end
+
+Switch#
+2024-10-24 20:12:13,493:INFO:Configuración aplicada al puerto Ethernet0/3.
+2024-10-24 20:12:15,230:INFO:Configuración actual de Ethernet0/3:
+Building configuration...
+
+Current configuration : 66 bytes
+!
+interface Ethernet0/3
+ switchport mode access
+ duplex auto
+end
+
+Switch#
+2024-10-24 20:12:15,292:INFO:Proceso completado exitosamente.
+2024-10-24 20:14:24,339:INFO:Conectado al dispositivo 192.168.100.121 con éxito.
+2024-10-24 20:14:25,488:INFO:Puertos disponibles:
+Interface                  IP-Address      OK? Method Status                Protocol
+Ethernet0/0                10.0.0.1        YES manual up                    up      
+Ethernet0/1                unassigned      YES manual up                    up      
+Ethernet0/2                unassigned      YES NVRAM  up                    up      
+Ethernet0/3                unassigned      YES NVRAM  up                    up      
+Loopback0                  unassigned      YES manual up                    up      
+wheliver#
+2024-10-24 20:14:25,489:INFO:Configuración de puertos cargada exitosamente.
+2024-10-24 20:14:26,026:INFO:Configuración aplicada al puerto Ethernet0/0.
+2024-10-24 20:14:26,764:INFO:Configuración actual de Ethernet0/0:
+Building configuration...
+
+Current configuration : 80 bytes
+!
+interface Ethernet0/0
+ ip address 10.0.0.1 255.255.255.0
+ no mop enabled
+end
+
+wheliver#
+2024-10-24 20:14:27,257:INFO:Configuración aplicada al puerto Ethernet0/1.
+2024-10-24 20:14:27,943:INFO:Configuración actual de Ethernet0/1:
+Building configuration...
+
+Current configuration : 44 bytes
+!
+interface Ethernet0/1
+ no ip address
+end
+
+wheliver#
+2024-10-24 20:14:28,048:INFO:Configuración aplicada al puerto Ethernet0/2.
+2024-10-24 20:14:28,735:INFO:Configuración actual de Ethernet0/2:
+Building configuration...
+
+Current configuration : 44 bytes
+!
+interface Ethernet0/2
+ no ip address
+end
+
+wheliver#
+2024-10-24 20:14:28,913:INFO:Configuración aplicada al puerto Ethernet0/3.
+2024-10-24 20:14:29,600:INFO:Configuración actual de Ethernet0/3:
+Building configuration...
+
+Current configuration : 44 bytes
+!
+interface Ethernet0/3
+ no ip address
+end
+
+wheliver#
+2024-10-24 20:14:29,715:INFO:Configuración aplicada al puerto Loopback0.
+2024-10-24 20:14:30,644:INFO:Configuración actual de Loopback0:
+Building configuration...
+
+Current configuration : 75 bytes
+!
+interface Loopback0
+ description Creado por Wheliver
+ no ip address
+end
+
+wheliver#
+2024-10-24 20:14:30,654:INFO:Proceso completado exitosamente.
+2024-10-24 21:42:20,835:INFO:Conectado al dispositivo 192.168.100.121 con éxito.
+2024-10-24 21:42:22,408:INFO:Puertos disponibles:
+Interface              IP-Address      OK? Method Status                Protocol
+Ethernet0/0            unassigned      YES unset  up                    up      
+Ethernet0/1            unassigned      YES unset  up                    up      
+Ethernet0/2            unassigned      YES unset  up                    up      
+Ethernet0/3            unassigned      YES unset  up                    up      
+Switch#
+2024-10-24 21:42:22,408:INFO:Configuración de puertos cargada exitosamente.
+2024-10-24 21:42:23,329:INFO:Configuración aplicada al puerto Ethernet0/0.
+2024-10-24 21:42:25,300:INFO:Configuración actual de Ethernet0/0:
+Building configuration...
+
+Current configuration : 209 bytes
+!
+interface Ethernet0/0
+ switchport mode access
+ switchport port-security maximum 10
+ switchport port-security mac-address aabb.cc01.e400
+ switchport port-security mac-address bee3.f4f3.ea83
+ duplex auto
+end
+
+Switch#
+2024-10-24 21:42:26,199:INFO:Configuración aplicada al puerto Ethernet0/1.
+2024-10-24 21:42:27,648:INFO:Configuración actual de Ethernet0/1:
+Building configuration...
+
+Current configuration : 66 bytes
+!
+interface Ethernet0/1
+ switchport mode access
+ duplex auto
+end
+
+Switch#
+Switch#
+*Oct 25 01:42:26.123: %SYS-5-CONFIG_I: Configured from console by console
+Sw
+2024-10-24 21:42:28,454:INFO:Configuración aplicada al puerto Ethernet0/2.
+2024-10-24 21:42:30,313:INFO:Configuración actual de Ethernet0/2:
+Building configuration...
+
+Current configuration : 66 bytes
+!
+interface Ethernet0/2
+ switchport mode access
+ duplex auto
+end
+
+Switch#
+S
+2024-10-24 21:42:31,119:INFO:Configuración aplicada al puerto Ethernet0/3.
+2024-10-24 21:42:32,568:INFO:Configuración actual de Ethernet0/3:
+Building configuration...
+
+Current configuration : 66 bytes
+!
+interface Ethernet0/3
+ switchport mode access
+ duplex auto
+end
+
+Switch#
+S
+2024-10-24 21:42:32,609:INFO:Proceso completado exitosamente.

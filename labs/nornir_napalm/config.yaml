@@ -1,0 +1,11 @@
+inventory:
+  plugin: SimpleInventory
+  options:
+    host_file: "/home/wheliver/labs/inventario/hosts.yml"
+    group_file: "/home/wheliver/labs/inventario/groups.yml"
+    defaults_file: "/home/wheliver/labs/inventario/defaults.yml"
+
+runner:
+  plugin: threaded
+  options:
+    num_workers: 100

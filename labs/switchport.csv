@@ -1,0 +1,5 @@
+Switch,Interface,Server,Link,Purpose,VLAN
+SW1,Ethernet0/1,webserver-01,nic 3,Host de Virtualizacion,trunk
+SW1,Ethernet0/2,appserver-01,nic 2,Host de Virtualizacion,trunk
+SW1,Ethernet0/3,db-03,nic 1,Servidor de Base de Datos,19
+SW1,Ethernet0/0,dev-db-01,nic 0,Servidor de Base de Datos,62

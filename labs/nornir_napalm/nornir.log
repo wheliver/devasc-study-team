@@ -1,0 +1,257 @@
+2024-10-31 16:45:09,977 -  nornir.core -     INFO -        run() - Running task 'send_command' with args {} on 5 hosts
+2024-10-31 16:45:09,984 - nornir.core.task -    ERROR -      start() - Host 'SW32': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/wheliver/.local/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wheliver/.local/lib/python3.12/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wheliver/.local/lib/python3.12/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/wheliver/.local/lib/python3.12/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/wheliver/.local/lib/python3.12/site-packages/nornir_napalm/plugins/connections/__init__.py", line 55, in open
+    network_driver = get_network_driver(platform)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wheliver/.local/lib/python3.12/site-packages/napalm/base/__init__.py", line 99, in get_network_driver
+    raise ModuleImportError(
+napalm.base.exceptions.ModuleImportError: Cannot import "cisco_ios_telnet". Is the library installed?
+
+2024-10-31 16:45:09,984 - nornir.core.task -    ERROR -      start() - Host 'ARISTA': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/wheliver/.local/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wheliver/.local/lib/python3.12/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wheliver/.local/lib/python3.12/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/wheliver/.local/lib/python3.12/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/wheliver/.local/lib/python3.12/site-packages/nornir_napalm/plugins/connections/__init__.py", line 55, in open
+    network_driver = get_network_driver(platform)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wheliver/.local/lib/python3.12/site-packages/napalm/base/__init__.py", line 99, in get_network_driver
+    raise ModuleImportError(
+napalm.base.exceptions.ModuleImportError: Cannot import "arista_eos_telnet". Is the library installed?
+
+2024-10-31 16:45:09,984 - nornir.core.task -    ERROR -      start() - Host 'R53': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/wheliver/.local/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wheliver/.local/lib/python3.12/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wheliver/.local/lib/python3.12/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/wheliver/.local/lib/python3.12/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/wheliver/.local/lib/python3.12/site-packages/nornir_napalm/plugins/connections/__init__.py", line 55, in open
+    network_driver = get_network_driver(platform)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wheliver/.local/lib/python3.12/site-packages/napalm/base/__init__.py", line 99, in get_network_driver
+    raise ModuleImportError(
+napalm.base.exceptions.ModuleImportError: Cannot import "cisco_ios_telnet". Is the library installed?
+
+2024-10-31 16:45:09,985 - nornir.core.task -    ERROR -      start() - Host 'ARISTA': task 'send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/wheliver/.local/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wheliver/labs/nornir_napalm/nornir_nirnir.py", line 11, in send_command
+    result = task.run(task=napalm_get, getters=["facts", "interfaces"])
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wheliver/.local/lib/python3.12/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: napalm_get (failed)
+
+
+2024-10-31 16:45:09,985 - nornir.core.task -    ERROR -      start() - Host 'SW32': task 'send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/wheliver/.local/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wheliver/labs/nornir_napalm/nornir_nirnir.py", line 11, in send_command
+    result = task.run(task=napalm_get, getters=["facts", "interfaces"])
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wheliver/.local/lib/python3.12/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: napalm_get (failed)
+
+
+2024-10-31 16:45:09,985 - nornir.core.task -    ERROR -      start() - Host 'R53': task 'send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/wheliver/.local/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wheliver/labs/nornir_napalm/nornir_nirnir.py", line 11, in send_command
+    result = task.run(task=napalm_get, getters=["facts", "interfaces"])
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wheliver/.local/lib/python3.12/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: napalm_get (failed)
+
+
+2024-10-31 16:46:15,822 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show ip int br'} on 5 hosts
+2024-10-31 16:47:01,564 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show ip int br'} on 5 hosts
+2024-10-31 16:47:04,622 - nornir.core.task -    ERROR -      start() - Host 'ARISTA': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/wheliver/.local/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wheliver/.local/lib/python3.12/site-packages/nornir_netmiko/tasks/netmiko_send_command.py", line 26, in netmiko_send_command
+    net_connect = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wheliver/.local/lib/python3.12/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/wheliver/.local/lib/python3.12/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/wheliver/.local/lib/python3.12/site-packages/nornir_netmiko/connections/netmiko.py", line 59, in open
+    connection = ConnectHandler(**parameters)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wheliver/.local/lib/python3.12/site-packages/netmiko/ssh_dispatcher.py", line 401, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wheliver/.local/lib/python3.12/site-packages/netmiko/arista/arista.py", line 113, in __init__
+    super().__init__(*args, **kwargs)
+  File "/home/wheliver/.local/lib/python3.12/site-packages/netmiko/base_connection.py", line 490, in __init__
+    self._open()
+  File "/home/wheliver/.local/lib/python3.12/site-packages/netmiko/base_connection.py", line 495, in _open
+    self.establish_connection()
+  File "/home/wheliver/.local/lib/python3.12/site-packages/netmiko/base_connection.py", line 1127, in establish_connection
+    self.telnet_login()
+  File "/home/wheliver/.local/lib/python3.12/site-packages/netmiko/cisco_base_connection.py", line 195, in telnet_login
+    raise NetmikoAuthenticationException(msg)
+netmiko.exceptions.NetmikoAuthenticationException: Login failed: 192.168.100.121
+
+2024-10-31 16:53:52,366 -  nornir.core -     INFO -        run() - Running task 'netmiko_send_command' with args {'command_string': 'show ip int br'} on 5 hosts
+2024-10-31 16:53:55,421 - nornir.core.task -    ERROR -      start() - Host 'ARISTA': task 'netmiko_send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/wheliver/.local/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wheliver/.local/lib/python3.12/site-packages/nornir_netmiko/tasks/netmiko_send_command.py", line 26, in netmiko_send_command
+    net_connect = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wheliver/.local/lib/python3.12/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/wheliver/.local/lib/python3.12/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/wheliver/.local/lib/python3.12/site-packages/nornir_netmiko/connections/netmiko.py", line 59, in open
+    connection = ConnectHandler(**parameters)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wheliver/.local/lib/python3.12/site-packages/netmiko/ssh_dispatcher.py", line 401, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wheliver/.local/lib/python3.12/site-packages/netmiko/arista/arista.py", line 113, in __init__
+    super().__init__(*args, **kwargs)
+  File "/home/wheliver/.local/lib/python3.12/site-packages/netmiko/base_connection.py", line 490, in __init__
+    self._open()
+  File "/home/wheliver/.local/lib/python3.12/site-packages/netmiko/base_connection.py", line 495, in _open
+    self.establish_connection()
+  File "/home/wheliver/.local/lib/python3.12/site-packages/netmiko/base_connection.py", line 1127, in establish_connection
+    self.telnet_login()
+  File "/home/wheliver/.local/lib/python3.12/site-packages/netmiko/cisco_base_connection.py", line 195, in telnet_login
+    raise NetmikoAuthenticationException(msg)
+netmiko.exceptions.NetmikoAuthenticationException: Login failed: 192.168.100.121
+
+2024-10-31 16:55:26,563 -  nornir.core -     INFO -        run() - Running task 'send_command' with args {} on 5 hosts
+2024-10-31 16:55:26,566 - nornir.core.task -    ERROR -      start() - Host 'R53': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/wheliver/.local/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wheliver/.local/lib/python3.12/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wheliver/.local/lib/python3.12/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/wheliver/.local/lib/python3.12/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/wheliver/.local/lib/python3.12/site-packages/nornir_napalm/plugins/connections/__init__.py", line 55, in open
+    network_driver = get_network_driver(platform)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wheliver/.local/lib/python3.12/site-packages/napalm/base/__init__.py", line 99, in get_network_driver
+    raise ModuleImportError(
+napalm.base.exceptions.ModuleImportError: Cannot import "cisco_ios_telnet". Is the library installed?
+
+2024-10-31 16:55:26,567 - nornir.core.task -    ERROR -      start() - Host 'SW32': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/wheliver/.local/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wheliver/.local/lib/python3.12/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wheliver/.local/lib/python3.12/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/wheliver/.local/lib/python3.12/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/wheliver/.local/lib/python3.12/site-packages/nornir_napalm/plugins/connections/__init__.py", line 55, in open
+    network_driver = get_network_driver(platform)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wheliver/.local/lib/python3.12/site-packages/napalm/base/__init__.py", line 99, in get_network_driver
+    raise ModuleImportError(
+napalm.base.exceptions.ModuleImportError: Cannot import "cisco_ios_telnet". Is the library installed?
+
+2024-10-31 16:55:26,567 - nornir.core.task -    ERROR -      start() - Host 'ARISTA': task 'napalm_get' failed with traceback:
+Traceback (most recent call last):
+  File "/home/wheliver/.local/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wheliver/.local/lib/python3.12/site-packages/nornir_napalm/plugins/tasks/napalm_get.py", line 32, in napalm_get
+    device = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wheliver/.local/lib/python3.12/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/wheliver/.local/lib/python3.12/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/wheliver/.local/lib/python3.12/site-packages/nornir_napalm/plugins/connections/__init__.py", line 55, in open
+    network_driver = get_network_driver(platform)
+                     ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wheliver/.local/lib/python3.12/site-packages/napalm/base/__init__.py", line 99, in get_network_driver
+    raise ModuleImportError(
+napalm.base.exceptions.ModuleImportError: Cannot import "arista_eos_telnet". Is the library installed?
+
+2024-10-31 16:55:26,569 - nornir.core.task -    ERROR -      start() - Host 'R53': task 'send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/wheliver/.local/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wheliver/labs/nornir_napalm/nornir_nirnir.py", line 11, in send_command
+    result = task.run(task=napalm_get, getters=["facts", "interfaces"])
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wheliver/.local/lib/python3.12/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: napalm_get (failed)
+
+
+2024-10-31 16:55:26,569 - nornir.core.task -    ERROR -      start() - Host 'SW32': task 'send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/wheliver/.local/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wheliver/labs/nornir_napalm/nornir_nirnir.py", line 11, in send_command
+    result = task.run(task=napalm_get, getters=["facts", "interfaces"])
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wheliver/.local/lib/python3.12/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: napalm_get (failed)
+
+
+2024-10-31 16:55:26,569 - nornir.core.task -    ERROR -      start() - Host 'ARISTA': task 'send_command' failed with traceback:
+Traceback (most recent call last):
+  File "/home/wheliver/.local/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wheliver/labs/nornir_napalm/nornir_nirnir.py", line 11, in send_command
+    result = task.run(task=napalm_get, getters=["facts", "interfaces"])
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wheliver/.local/lib/python3.12/site-packages/nornir/core/task.py", line 174, in run
+    raise NornirSubTaskError(task=run_task, result=r)
+nornir.core.exceptions.NornirSubTaskError: Subtask: napalm_get (failed)
+
+

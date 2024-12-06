@@ -1,0 +1,26 @@
+--- 
+inventory:
+  plugin: SimpleInventory
+  options:
+    host_file: "/home/wheliver/labs/jinja2/hosts.yaml"  # Ajusta la ruta aquí
+    group_file: "/home/wheliver/labs/jinja2/groups.yaml"  # Ajusta si es necesario
+    defaults_file: "/home/wheliver/labs/jinja2/defaults.yaml"  # Ajusta si es necesario
+
+runner:
+  plugin: threaded
+  options:
+    num_workers: 20
+
+logging:
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+  level: "DEBUG"
+
+connections_options:
+  netmiko:
+    extras:
+      conn_timeout: 30  # Aumenta el tiempo de espera a 30 segundos
+      banner_timeout: 30  # Aumenta el tiempo de espera para el banner
+      allow_agent: false
+      use_keys: false
+      pkey: null
+      hostkey_verify: false  # Desactiva la verificación de la clave SSH

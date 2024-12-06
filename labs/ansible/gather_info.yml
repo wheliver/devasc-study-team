@@ -1,0 +1,25 @@
+---
+- name: "Recopilar información de IOS XE"
+  hosts: iosxe
+  gather_facts: no
+  connection: ansible.netcommon.network_cli
+  tasks:
+    - name: "Mostrar versión de IOS"
+      cisco.ios.ios_command:
+        commands:
+          - "show version"
+      register: output_version
+
+    - name: "Mostrar configuración SNMP"
+      cisco.ios.ios_command:
+        commands:
+          - "show run | include snmp-server"
+      register: output_snmp
+
+    - name: "Mostrar salida"
+      debug:
+        var: output_version.stdout_lines
+
+    - name: "Mostrar configuración SNMP"
+      debug:
+        var: output_snmp.stdout_lines

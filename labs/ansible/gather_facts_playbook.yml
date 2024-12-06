@@ -1,0 +1,8 @@
+---
+- name: "Recolección de información con Gather_facts"
+  hosts: all
+  gather_facts: yes
+  tasks:
+    - name: "Mostrar hechos recopilados (facts) del dispositivo"
+      debug: 
+        var: ansible_facts

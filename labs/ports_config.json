@@ -1,0 +1,42 @@
+{
+    "Ethernet0/0": {
+        "allowed_mac": [
+            "aabb.cc01.e400",
+            "bee3.f4f3.ea83"
+        ],
+        "denied_mac": [],
+        "permit_all": true,
+        "deny_all": false
+    },
+    "Ethernet0/1": {
+        "allowed_mac": [
+            "0050.7966.6838",
+            "1a5c.0153.9c89"
+        ],
+        "denied_mac": [ ],
+        "permit_all": true,
+        "deny_all": true
+    },
+    "Ethernet0/2": {
+        "allowed_mac": [
+            "36ee.4f84.b835"
+        ],
+        "denied_mac": [],
+        "permit_all": true,
+        "deny_all": false
+    },
+    "Ethernet0/3": {
+        "allowed_mac": [
+            "1615.2181.231c"
+        ],
+        "denied_mac": [],
+        "permit_all": true,
+        "deny_all": false
+    },
+    "Loopback0": {
+        "allowed_mac": [],
+        "denied_mac": [],
+        "permit_all": true,
+        "deny_all": false
+    }
+}

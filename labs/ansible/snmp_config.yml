@@ -1,0 +1,11 @@
+---
+- name: "Configurar SNMP en IOS XE"
+  hosts: iosxe
+  gather_facts: no
+  connection: ansible.netcommon.network_cli
+  tasks:
+    - name: "Configurar SNMP"
+      cisco.ios.ios_config:
+        lines:
+          - "snmp-server community public RO"
+          - "snmp-server contact wheliver@rivas.com"

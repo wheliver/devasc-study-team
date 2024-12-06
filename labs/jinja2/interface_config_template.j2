@@ -1,0 +1,16 @@
+interface {{ interface }}
+  ip address {{ IP_Address }} {{ Subnet_Mask }}
+  description {{ Description }}
+
+{% if Static_Route %}
+ip route {{ Static_Route }}
+{% endif %}
+
+{% if Routing_Protocol == 'OSPF' %}
+router ospf 1
+  network {{ IP_Address }} {{ Subnet_Mask }} area 0
+{% elif Routing_Protocol == 'RIP' %}
+router rip
+  version 2
+  network {{ IP_Address }}
+{% endif %}

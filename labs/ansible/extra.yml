@@ -1,0 +1,88 @@
+---
+
+- name: "Configurar IOS XE e IOS XR"
+  hosts: all
+  gather_facts: no
+
+  tasks:
+
+    - name: "Configurar SNMP en IOS XE"
+      when: ansible_network_os == 'ios'
+      cisco.ios.ios_config:
+        lines:
+          - "snmp-server community public RO"
+          - "snmp-server contact wheliver@rivas.com"
+
+    - name: "Configurar SNMP en IOS XR"
+      when: ansible_network_os == 'iosxr'
+      cisco.iosxr.iosxr_config:
+        lines:
+          - "snmp-server community public RO"
+          - "snmp-server contact wheliver@rivas.com"
+
+    - name: "Verificar configuración de la interfaz Loopback en IOS XE"
+      when: ansible_network_os == 'ios'
+      cisco.ios.ios_command:
+        commands:
+          - "show running-config interface Loopback30"
+      register: loopback_config_ios
+
+    - name: "Crear interfaz Loopback en IOS XE si no existe"
+      when: ansible_network_os == 'ios' and "'Loopback30' not in loopback_config_ios.stdout[0]"
+      cisco.ios.ios_config:+
+        lines:
+          - "interface Loopback30"
+
+    - name: "Eliminar dirección IP previa en Loopback IOS XE si existe"
+      when: ansible_network_os == 'ios' and "ip address 192.168.30.1" in loopback_config_ios.stdout[0]
+      cisco.ios.ios_config:
+        parents: "interface Loopback30"
+        lines:
+          - "no ip address 192.168.30.1 255.255.255.0"
+
+    - name: "Configurar interfaz Loopback en IOS XE"
+      when: ansible_network_os == 'ios'
+      cisco.ios.ios_config:
+        parents: "interface Loopback30"
+        lines:
+          - "ip address 192.168.30.1 255.255.255.0"
+
+    - name: "Verificar configuración de la interfaz Loopback en IOS XR"
+      when: ansible_network_os == 'iosxr'
+      cisco.iosxr.iosxr_command:
+        commands:
+          - "show running-config interface Loopback30"
+      register: loopback_config_xr
+
+    - name: "Crear interfaz Loopback en IOS XR si no existe"
+      when: ansible_network_os == 'iosxr' and "'interface Loopback30' not in loopback_config_xr.stdout[0]"
+      cisco.iosxr.iosxr_config:
+        lines:
+          - "interface Loopback30"
+
+    - name: "Eliminar dirección IP previa en Loopback IOS XR si existe"
+      when: ansible_network_os == 'iosxr' and "ipv4 address 192.168.6.2" in loopback_config_xr.stdout[0]
+      cisco.iosxr.iosxr_config:
+        parents: "interface Loopback30"
+        lines:
+          - "no ipv4 address 192.168.6.2 255.255.255.0"
+
+    - name: "Configurar interfaz Loopback en IOS XR"
+      when: ansible_network_os == 'iosxr'
+      cisco.iosxr.iosxr_config:
+        parents: "interface Loopback30"
+        lines:
+          - "ipv4 address 192.168.6.2 255.255.255.0"
+
+    - name: "Configurar NTP en IOS XE"
+      when: ansible_network_os == 'ios'
+      cisco.ios.ios_config:
+        lines:
+          - "ntp server 192.168.1.1"
+
+    - name: "Configurar NTP en IOS XR"
+      when: ansible_network_os == 'iosxr'
+      cisco.iosxr.iosxr_config:
+        lines:
+          - "ntp server 192.168.1.1"
+          - "ntp update-calendar"

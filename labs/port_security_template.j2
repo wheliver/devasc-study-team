@@ -1,0 +1,21 @@
+interface {{ port }}
+ switchport mode access
+ switchport port-security
+{% if permit_all %}
+ no switchport port-security 
+{% elif deny_all %}
+ switchport port-security maximum 1 
+ switchport port-security violation restrict  
+{% else %}
+ switchport port-security maximum 10  
+{% for mac in allowed_mac_list %}
+ switchport port-security mac-address {{ mac }}  
+{% endfor %}
+{% if denied_mac_list %}
+{% for mac in denied_mac_list %}
+ switchport port-security mac-address sticky {{ mac }} 
+ switchport port-security violation restrict  
+{% endfor %}
+{% endif %}
+ switchport port-security violation restrict 
+{% endif %}

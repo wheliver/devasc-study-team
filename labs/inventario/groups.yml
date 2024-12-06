@@ -1,0 +1,29 @@
+## Nornir Groups File 
+---
+
+Routers: 
+  data: 
+    ntp: 
+      servers: 
+        - 1.1.1.1
+
+Switches: 
+  data: 
+    ntp: 
+      servers: 
+        - 2.2.2.2 
+
+Juan: 
+  data:
+    site: Navarrete  
+    syslog: 
+      servers: 
+        - 3.3.3.3
+
+Santiago: 
+  data:
+    site: Santiago  
+    syslog: 
+      servers: 
+        - 1.1.1.1
+        - 4.4.4.4

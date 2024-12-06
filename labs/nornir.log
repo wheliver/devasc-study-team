@@ -1,0 +1,593 @@
+2024-11-10 16:13:05,237 - nornir.core - INFO - Running task 'apply_config' with args {} on 2 hosts
+2024-11-10 16:13:05,237 - nornir.core.task - DEBUG - Host 'router1': running task 'apply_config'
+2024-11-10 16:13:05,237 - nornir.core.task - DEBUG - Host 'router1': running task 'netmiko_send_config'
+2024-11-10 16:13:05,237 - nornir.core.task - DEBUG - Host 'router2': running task 'apply_config'
+2024-11-10 16:13:05,237 - nornir.core.task - DEBUG - Host 'router2': running task 'netmiko_send_config'
+2024-11-10 16:13:15,368 - nornir.core.task - ERROR - Host 'router2': task 'netmiko_send_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/wheliver/.local/lib/python3.12/site-packages/netmiko/base_connection.py", line 1139, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/home/wheliver/.local/lib/python3.12/site-packages/paramiko/client.py", line 457, in connect
+    server_key = t.get_remote_server_key()
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wheliver/.local/lib/python3.12/site-packages/paramiko/transport.py", line 953, in get_remote_server_key
+    raise SSHException("No existing session")
+paramiko.ssh_exception.SSHException: No existing session
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/wheliver/.local/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wheliver/.local/lib/python3.12/site-packages/nornir_netmiko/tasks/netmiko_send_config.py", line 28, in netmiko_send_config
+    net_connect = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wheliver/.local/lib/python3.12/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/wheliver/.local/lib/python3.12/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/wheliver/.local/lib/python3.12/site-packages/nornir_netmiko/connections/netmiko.py", line 59, in open
+    connection = ConnectHandler(**parameters)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wheliver/.local/lib/python3.12/site-packages/netmiko/ssh_dispatcher.py", line 401, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wheliver/.local/lib/python3.12/site-packages/netmiko/base_connection.py", line 490, in __init__
+    self._open()
+  File "/home/wheliver/.local/lib/python3.12/site-packages/netmiko/base_connection.py", line 495, in _open
+    self.establish_connection()
+  File "/home/wheliver/.local/lib/python3.12/site-packages/netmiko/base_connection.py", line 1184, in establish_connection
+    raise NetmikoTimeoutException(msg)
+netmiko.exceptions.NetmikoTimeoutException: Paramiko: 'No existing session' error: try increasing 'conn_timeout' to 15 seconds or larger.
+
+2024-11-10 16:13:15,369 - nornir.core.task - ERROR - Host 'router1': task 'netmiko_send_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/wheliver/.local/lib/python3.12/site-packages/netmiko/base_connection.py", line 1139, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/home/wheliver/.local/lib/python3.12/site-packages/paramiko/client.py", line 457, in connect
+    server_key = t.get_remote_server_key()
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wheliver/.local/lib/python3.12/site-packages/paramiko/transport.py", line 953, in get_remote_server_key
+    raise SSHException("No existing session")
+paramiko.ssh_exception.SSHException: No existing session
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/wheliver/.local/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wheliver/.local/lib/python3.12/site-packages/nornir_netmiko/tasks/netmiko_send_config.py", line 28, in netmiko_send_config
+    net_connect = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wheliver/.local/lib/python3.12/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/wheliver/.local/lib/python3.12/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/wheliver/.local/lib/python3.12/site-packages/nornir_netmiko/connections/netmiko.py", line 59, in open
+    connection = ConnectHandler(**parameters)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wheliver/.local/lib/python3.12/site-packages/netmiko/ssh_dispatcher.py", line 401, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wheliver/.local/lib/python3.12/site-packages/netmiko/base_connection.py", line 490, in __init__
+    self._open()
+  File "/home/wheliver/.local/lib/python3.12/site-packages/netmiko/base_connection.py", line 495, in _open
+    self.establish_connection()
+  File "/home/wheliver/.local/lib/python3.12/site-packages/netmiko/base_connection.py", line 1184, in establish_connection
+    raise NetmikoTimeoutException(msg)
+netmiko.exceptions.NetmikoTimeoutException: Paramiko: 'No existing session' error: try increasing 'conn_timeout' to 15 seconds or larger.
+
+2024-11-10 16:21:23,557 - nornir.core - INFO - Running task 'apply_config' with args {} on 2 hosts
+2024-11-10 16:21:23,558 - nornir.core.task - DEBUG - Host 'router1': running task 'apply_config'
+2024-11-10 16:21:23,558 - nornir.core.task - DEBUG - Host 'router1': running task 'netmiko_send_config'
+2024-11-10 16:21:23,558 - nornir.core.task - DEBUG - Host 'router2': running task 'apply_config'
+2024-11-10 16:21:23,558 - nornir.core.task - DEBUG - Host 'router2': running task 'netmiko_send_config'
+2024-11-10 16:21:33,650 - nornir.core.task - ERROR - Host 'router1': task 'netmiko_send_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/wheliver/.local/lib/python3.12/site-packages/netmiko/base_connection.py", line 1139, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/home/wheliver/.local/lib/python3.12/site-packages/paramiko/client.py", line 457, in connect
+    server_key = t.get_remote_server_key()
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wheliver/.local/lib/python3.12/site-packages/paramiko/transport.py", line 953, in get_remote_server_key
+    raise SSHException("No existing session")
+paramiko.ssh_exception.SSHException: No existing session
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/wheliver/.local/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wheliver/.local/lib/python3.12/site-packages/nornir_netmiko/tasks/netmiko_send_config.py", line 28, in netmiko_send_config
+    net_connect = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wheliver/.local/lib/python3.12/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/wheliver/.local/lib/python3.12/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/wheliver/.local/lib/python3.12/site-packages/nornir_netmiko/connections/netmiko.py", line 59, in open
+    connection = ConnectHandler(**parameters)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wheliver/.local/lib/python3.12/site-packages/netmiko/ssh_dispatcher.py", line 401, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wheliver/.local/lib/python3.12/site-packages/netmiko/base_connection.py", line 490, in __init__
+    self._open()
+  File "/home/wheliver/.local/lib/python3.12/site-packages/netmiko/base_connection.py", line 495, in _open
+    self.establish_connection()
+  File "/home/wheliver/.local/lib/python3.12/site-packages/netmiko/base_connection.py", line 1184, in establish_connection
+    raise NetmikoTimeoutException(msg)
+netmiko.exceptions.NetmikoTimeoutException: Paramiko: 'No existing session' error: try increasing 'conn_timeout' to 15 seconds or larger.
+
+2024-11-10 16:21:33,651 - nornir.core.task - ERROR - Host 'router2': task 'netmiko_send_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/wheliver/.local/lib/python3.12/site-packages/netmiko/base_connection.py", line 1139, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/home/wheliver/.local/lib/python3.12/site-packages/paramiko/client.py", line 457, in connect
+    server_key = t.get_remote_server_key()
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wheliver/.local/lib/python3.12/site-packages/paramiko/transport.py", line 953, in get_remote_server_key
+    raise SSHException("No existing session")
+paramiko.ssh_exception.SSHException: No existing session
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/wheliver/.local/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wheliver/.local/lib/python3.12/site-packages/nornir_netmiko/tasks/netmiko_send_config.py", line 28, in netmiko_send_config
+    net_connect = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wheliver/.local/lib/python3.12/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/wheliver/.local/lib/python3.12/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/wheliver/.local/lib/python3.12/site-packages/nornir_netmiko/connections/netmiko.py", line 59, in open
+    connection = ConnectHandler(**parameters)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wheliver/.local/lib/python3.12/site-packages/netmiko/ssh_dispatcher.py", line 401, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wheliver/.local/lib/python3.12/site-packages/netmiko/base_connection.py", line 490, in __init__
+    self._open()
+  File "/home/wheliver/.local/lib/python3.12/site-packages/netmiko/base_connection.py", line 495, in _open
+    self.establish_connection()
+  File "/home/wheliver/.local/lib/python3.12/site-packages/netmiko/base_connection.py", line 1184, in establish_connection
+    raise NetmikoTimeoutException(msg)
+netmiko.exceptions.NetmikoTimeoutException: Paramiko: 'No existing session' error: try increasing 'conn_timeout' to 15 seconds or larger.
+
+2024-11-10 16:22:33,191 - nornir.core - INFO - Running task 'apply_config' with args {} on 2 hosts
+2024-11-10 16:22:33,192 - nornir.core.task - DEBUG - Host 'router1': running task 'apply_config'
+2024-11-10 16:22:33,192 - nornir.core.task - DEBUG - Host 'router2': running task 'apply_config'
+2024-11-10 16:22:33,192 - nornir.core.task - DEBUG - Host 'router1': running task 'netmiko_send_config'
+2024-11-10 16:22:33,192 - nornir.core.task - DEBUG - Host 'router2': running task 'netmiko_send_config'
+2024-11-10 16:22:33,399 - nornir.core.task - ERROR - Host 'router2': task 'netmiko_send_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/wheliver/.local/lib/python3.12/site-packages/paramiko/transport.py", line 2369, in _check_banner
+    buf = self.packetizer.readline(timeout)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wheliver/.local/lib/python3.12/site-packages/paramiko/packet.py", line 401, in readline
+    return u(buf)
+           ^^^^^^
+  File "/home/wheliver/.local/lib/python3.12/site-packages/paramiko/util.py", line 333, in u
+    return s.decode(encoding)
+           ^^^^^^^^^^^^^^^^^^
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/wheliver/.local/lib/python3.12/site-packages/netmiko/base_connection.py", line 1139, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/home/wheliver/.local/lib/python3.12/site-packages/paramiko/client.py", line 451, in connect
+    t.start_client(timeout=timeout)
+  File "/home/wheliver/.local/lib/python3.12/site-packages/paramiko/transport.py", line 773, in start_client
+    raise e
+  File "/home/wheliver/.local/lib/python3.12/site-packages/paramiko/transport.py", line 2185, in run
+    self._check_banner()
+  File "/home/wheliver/.local/lib/python3.12/site-packages/paramiko/transport.py", line 2373, in _check_banner
+    raise SSHException(
+paramiko.ssh_exception.SSHException: Error reading SSH protocol banner'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/wheliver/.local/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wheliver/.local/lib/python3.12/site-packages/nornir_netmiko/tasks/netmiko_send_config.py", line 28, in netmiko_send_config
+    net_connect = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wheliver/.local/lib/python3.12/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/wheliver/.local/lib/python3.12/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/wheliver/.local/lib/python3.12/site-packages/nornir_netmiko/connections/netmiko.py", line 59, in open
+    connection = ConnectHandler(**parameters)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wheliver/.local/lib/python3.12/site-packages/netmiko/ssh_dispatcher.py", line 401, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wheliver/.local/lib/python3.12/site-packages/netmiko/base_connection.py", line 490, in __init__
+    self._open()
+  File "/home/wheliver/.local/lib/python3.12/site-packages/netmiko/base_connection.py", line 495, in _open
+    self.establish_connection()
+  File "/home/wheliver/.local/lib/python3.12/site-packages/netmiko/base_connection.py", line 1192, in establish_connection
+    raise NetmikoTimeoutException(msg)
+netmiko.exceptions.NetmikoTimeoutException: 
+A paramiko SSHException occurred during connection creation:
+
+Error reading SSH protocol banner'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+
+
+
+2024-11-10 16:22:33,400 - nornir.core.task - ERROR - Host 'router1': task 'netmiko_send_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/wheliver/.local/lib/python3.12/site-packages/paramiko/transport.py", line 2369, in _check_banner
+    buf = self.packetizer.readline(timeout)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wheliver/.local/lib/python3.12/site-packages/paramiko/packet.py", line 401, in readline
+    return u(buf)
+           ^^^^^^
+  File "/home/wheliver/.local/lib/python3.12/site-packages/paramiko/util.py", line 333, in u
+    return s.decode(encoding)
+           ^^^^^^^^^^^^^^^^^^
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/wheliver/.local/lib/python3.12/site-packages/netmiko/base_connection.py", line 1139, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/home/wheliver/.local/lib/python3.12/site-packages/paramiko/client.py", line 451, in connect
+    t.start_client(timeout=timeout)
+  File "/home/wheliver/.local/lib/python3.12/site-packages/paramiko/transport.py", line 773, in start_client
+    raise e
+  File "/home/wheliver/.local/lib/python3.12/site-packages/paramiko/transport.py", line 2185, in run
+    self._check_banner()
+  File "/home/wheliver/.local/lib/python3.12/site-packages/paramiko/transport.py", line 2373, in _check_banner
+    raise SSHException(
+paramiko.ssh_exception.SSHException: Error reading SSH protocol banner'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/wheliver/.local/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wheliver/.local/lib/python3.12/site-packages/nornir_netmiko/tasks/netmiko_send_config.py", line 28, in netmiko_send_config
+    net_connect = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wheliver/.local/lib/python3.12/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/wheliver/.local/lib/python3.12/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/wheliver/.local/lib/python3.12/site-packages/nornir_netmiko/connections/netmiko.py", line 59, in open
+    connection = ConnectHandler(**parameters)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wheliver/.local/lib/python3.12/site-packages/netmiko/ssh_dispatcher.py", line 401, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wheliver/.local/lib/python3.12/site-packages/netmiko/base_connection.py", line 490, in __init__
+    self._open()
+  File "/home/wheliver/.local/lib/python3.12/site-packages/netmiko/base_connection.py", line 495, in _open
+    self.establish_connection()
+  File "/home/wheliver/.local/lib/python3.12/site-packages/netmiko/base_connection.py", line 1192, in establish_connection
+    raise NetmikoTimeoutException(msg)
+netmiko.exceptions.NetmikoTimeoutException: 
+A paramiko SSHException occurred during connection creation:
+
+Error reading SSH protocol banner'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+
+
+
+2024-11-10 16:22:56,522 - nornir.core - INFO - Running task 'apply_config' with args {} on 2 hosts
+2024-11-10 16:22:56,522 - nornir.core.task - DEBUG - Host 'router1': running task 'apply_config'
+2024-11-10 16:22:56,522 - nornir.core.task - DEBUG - Host 'router1': running task 'netmiko_send_config'
+2024-11-10 16:22:56,522 - nornir.core.task - DEBUG - Host 'router2': running task 'apply_config'
+2024-11-10 16:22:56,522 - nornir.core.task - DEBUG - Host 'router2': running task 'netmiko_send_config'
+2024-11-10 16:22:56,663 - nornir.core.task - ERROR - Host 'router1': task 'netmiko_send_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/wheliver/.local/lib/python3.12/site-packages/paramiko/transport.py", line 2369, in _check_banner
+    buf = self.packetizer.readline(timeout)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wheliver/.local/lib/python3.12/site-packages/paramiko/packet.py", line 401, in readline
+    return u(buf)
+           ^^^^^^
+  File "/home/wheliver/.local/lib/python3.12/site-packages/paramiko/util.py", line 333, in u
+    return s.decode(encoding)
+           ^^^^^^^^^^^^^^^^^^
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/wheliver/.local/lib/python3.12/site-packages/netmiko/base_connection.py", line 1139, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/home/wheliver/.local/lib/python3.12/site-packages/paramiko/client.py", line 451, in connect
+    t.start_client(timeout=timeout)
+  File "/home/wheliver/.local/lib/python3.12/site-packages/paramiko/transport.py", line 773, in start_client
+    raise e
+  File "/home/wheliver/.local/lib/python3.12/site-packages/paramiko/transport.py", line 2185, in run
+    self._check_banner()
+  File "/home/wheliver/.local/lib/python3.12/site-packages/paramiko/transport.py", line 2373, in _check_banner
+    raise SSHException(
+paramiko.ssh_exception.SSHException: Error reading SSH protocol banner'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/wheliver/.local/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wheliver/.local/lib/python3.12/site-packages/nornir_netmiko/tasks/netmiko_send_config.py", line 28, in netmiko_send_config
+    net_connect = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wheliver/.local/lib/python3.12/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/wheliver/.local/lib/python3.12/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/wheliver/.local/lib/python3.12/site-packages/nornir_netmiko/connections/netmiko.py", line 59, in open
+    connection = ConnectHandler(**parameters)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wheliver/.local/lib/python3.12/site-packages/netmiko/ssh_dispatcher.py", line 401, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wheliver/.local/lib/python3.12/site-packages/netmiko/base_connection.py", line 490, in __init__
+    self._open()
+  File "/home/wheliver/.local/lib/python3.12/site-packages/netmiko/base_connection.py", line 495, in _open
+    self.establish_connection()
+  File "/home/wheliver/.local/lib/python3.12/site-packages/netmiko/base_connection.py", line 1192, in establish_connection
+    raise NetmikoTimeoutException(msg)
+netmiko.exceptions.NetmikoTimeoutException: 
+A paramiko SSHException occurred during connection creation:
+
+Error reading SSH protocol banner'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+
+
+
+2024-11-10 16:23:00,422 - nornir.core.task - ERROR - Host 'router2': task 'netmiko_send_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/wheliver/.local/lib/python3.12/site-packages/paramiko/transport.py", line 2369, in _check_banner
+    buf = self.packetizer.readline(timeout)
+          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wheliver/.local/lib/python3.12/site-packages/paramiko/packet.py", line 401, in readline
+    return u(buf)
+           ^^^^^^
+  File "/home/wheliver/.local/lib/python3.12/site-packages/paramiko/util.py", line 333, in u
+    return s.decode(encoding)
+           ^^^^^^^^^^^^^^^^^^
+UnicodeDecodeError: 'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/wheliver/.local/lib/python3.12/site-packages/netmiko/base_connection.py", line 1139, in establish_connection
+    self.remote_conn_pre.connect(**ssh_connect_params)
+  File "/home/wheliver/.local/lib/python3.12/site-packages/paramiko/client.py", line 451, in connect
+    t.start_client(timeout=timeout)
+  File "/home/wheliver/.local/lib/python3.12/site-packages/paramiko/transport.py", line 773, in start_client
+    raise e
+  File "/home/wheliver/.local/lib/python3.12/site-packages/paramiko/transport.py", line 2185, in run
+    self._check_banner()
+  File "/home/wheliver/.local/lib/python3.12/site-packages/paramiko/transport.py", line 2373, in _check_banner
+    raise SSHException(
+paramiko.ssh_exception.SSHException: Error reading SSH protocol banner'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/wheliver/.local/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wheliver/.local/lib/python3.12/site-packages/nornir_netmiko/tasks/netmiko_send_config.py", line 28, in netmiko_send_config
+    net_connect = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wheliver/.local/lib/python3.12/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/wheliver/.local/lib/python3.12/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/wheliver/.local/lib/python3.12/site-packages/nornir_netmiko/connections/netmiko.py", line 59, in open
+    connection = ConnectHandler(**parameters)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wheliver/.local/lib/python3.12/site-packages/netmiko/ssh_dispatcher.py", line 401, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wheliver/.local/lib/python3.12/site-packages/netmiko/base_connection.py", line 490, in __init__
+    self._open()
+  File "/home/wheliver/.local/lib/python3.12/site-packages/netmiko/base_connection.py", line 495, in _open
+    self.establish_connection()
+  File "/home/wheliver/.local/lib/python3.12/site-packages/netmiko/base_connection.py", line 1192, in establish_connection
+    raise NetmikoTimeoutException(msg)
+netmiko.exceptions.NetmikoTimeoutException: 
+A paramiko SSHException occurred during connection creation:
+
+Error reading SSH protocol banner'utf-8' codec can't decode byte 0xff in position 0: invalid start byte
+
+
+
+2024-11-10 16:30:14,304 - nornir.core - INFO - Running task 'apply_config' with args {} on 2 hosts
+2024-11-10 16:30:14,305 - nornir.core.task - DEBUG - Host 'router1': running task 'apply_config'
+2024-11-10 16:30:14,306 - nornir.core.task - DEBUG - Host 'router1': running task 'netmiko_send_config'
+2024-11-10 16:30:14,306 - nornir.core.task - DEBUG - Host 'router2': running task 'apply_config'
+2024-11-10 16:30:14,306 - nornir.core.task - DEBUG - Host 'router2': running task 'netmiko_send_config'
+2024-11-10 16:30:14,308 - nornir.core.task - ERROR - Host 'router2': task 'netmiko_send_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/wheliver/.local/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wheliver/.local/lib/python3.12/site-packages/nornir_netmiko/tasks/netmiko_send_config.py", line 28, in netmiko_send_config
+    net_connect = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wheliver/.local/lib/python3.12/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/wheliver/.local/lib/python3.12/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/wheliver/.local/lib/python3.12/site-packages/nornir_netmiko/connections/netmiko.py", line 59, in open
+    connection = ConnectHandler(**parameters)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wheliver/.local/lib/python3.12/site-packages/netmiko/ssh_dispatcher.py", line 401, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: BaseConnection.__init__() got an unexpected keyword argument 'hostkey_verify'
+
+2024-11-10 16:30:14,309 - nornir.core.task - ERROR - Host 'router1': task 'netmiko_send_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/wheliver/.local/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wheliver/.local/lib/python3.12/site-packages/nornir_netmiko/tasks/netmiko_send_config.py", line 28, in netmiko_send_config
+    net_connect = task.host.get_connection(CONNECTION_NAME, task.nornir.config)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wheliver/.local/lib/python3.12/site-packages/nornir/core/inventory.py", line 494, in get_connection
+    self.open_connection(
+  File "/home/wheliver/.local/lib/python3.12/site-packages/nornir/core/inventory.py", line 546, in open_connection
+    conn_obj.open(
+  File "/home/wheliver/.local/lib/python3.12/site-packages/nornir_netmiko/connections/netmiko.py", line 59, in open
+    connection = ConnectHandler(**parameters)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wheliver/.local/lib/python3.12/site-packages/netmiko/ssh_dispatcher.py", line 401, in ConnectHandler
+    return ConnectionClass(*args, **kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+TypeError: BaseConnection.__init__() got an unexpected keyword argument 'hostkey_verify'
+
+2024-11-10 16:32:10,250 - nornir.core - INFO - Running task 'apply_config' with args {} on 2 hosts
+2024-11-10 16:32:10,251 - nornir.core.task - DEBUG - Host 'router1': running task 'apply_config'
+2024-11-10 16:32:10,251 - nornir.core.task - DEBUG - Host 'router1': running task 'netmiko_send_config'
+2024-11-10 16:32:10,251 - nornir.core.task - DEBUG - Host 'router2': running task 'apply_config'
+2024-11-10 16:32:10,251 - nornir.core.task - DEBUG - Host 'router2': running task 'netmiko_send_config'
+2024-11-10 16:44:20,320 - nornir.core - INFO - Running task 'apply_config' with args {} on 2 hosts
+2024-11-10 16:44:20,320 - nornir.core.task - DEBUG - Host 'router1': running task 'apply_config'
+2024-11-10 16:44:20,320 - nornir.core.task - DEBUG - Host 'router2': running task 'apply_config'
+2024-11-10 16:44:20,320 - nornir.core.task - DEBUG - Host 'router1': running task 'netmiko_send_config'
+2024-11-10 16:44:20,320 - nornir.core.task - DEBUG - Host 'router2': running task 'netmiko_send_config'
+2024-11-10 16:44:42,545 - nornir.core.task - ERROR - Host 'router2': task 'netmiko_send_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/wheliver/.local/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wheliver/.local/lib/python3.12/site-packages/nornir_netmiko/tasks/netmiko_send_config.py", line 38, in netmiko_send_config
+    result = net_connect.send_config_set(config_commands=config_commands, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wheliver/.local/lib/python3.12/site-packages/netmiko/base_connection.py", line 111, in wrapper_decorator
+    return_val = func(self, *args, **kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wheliver/.local/lib/python3.12/site-packages/netmiko/base_connection.py", line 2319, in send_config_set
+    output += self.read_until_pattern(
+              ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wheliver/.local/lib/python3.12/site-packages/netmiko/base_connection.py", line 748, in read_until_pattern
+    raise ReadTimeout(msg)
+netmiko.exceptions.ReadTimeout: 
+
+Pattern not detected: 'description\\ Red\\ de\\ administración' in output.
+
+Things you might try to fix this:
+1. Adjust the regex pattern to better identify the terminating string. Note, in
+many situations the pattern is automatically based on the network device's prompt.
+2. Increase the read_timeout to a larger value.
+
+You can also look at the Netmiko session_log or debug log for more information.
+
+
+
+2024-11-10 16:44:43,961 - nornir.core.task - ERROR - Host 'router1': task 'netmiko_send_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/wheliver/.local/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wheliver/.local/lib/python3.12/site-packages/nornir_netmiko/tasks/netmiko_send_config.py", line 38, in netmiko_send_config
+    result = net_connect.send_config_set(config_commands=config_commands, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wheliver/.local/lib/python3.12/site-packages/netmiko/base_connection.py", line 111, in wrapper_decorator
+    return_val = func(self, *args, **kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wheliver/.local/lib/python3.12/site-packages/netmiko/base_connection.py", line 2319, in send_config_set
+    output += self.read_until_pattern(
+              ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wheliver/.local/lib/python3.12/site-packages/netmiko/base_connection.py", line 748, in read_until_pattern
+    raise ReadTimeout(msg)
+netmiko.exceptions.ReadTimeout: 
+
+Pattern not detected: 'description\\ Red\\ de\\ administración' in output.
+
+Things you might try to fix this:
+1. Adjust the regex pattern to better identify the terminating string. Note, in
+many situations the pattern is automatically based on the network device's prompt.
+2. Increase the read_timeout to a larger value.
+
+You can also look at the Netmiko session_log or debug log for more information.
+
+
+
+2024-11-10 16:45:41,187 - nornir.core - INFO - Running task 'apply_config' with args {} on 2 hosts
+2024-11-10 16:45:41,187 - nornir.core.task - DEBUG - Host 'router1': running task 'apply_config'
+2024-11-10 16:45:41,188 - nornir.core.task - DEBUG - Host 'router1': running task 'netmiko_send_config'
+2024-11-10 16:45:41,188 - nornir.core.task - DEBUG - Host 'router2': running task 'apply_config'
+2024-11-10 16:45:41,188 - nornir.core.task - DEBUG - Host 'router2': running task 'netmiko_send_config'
+2024-11-10 16:46:03,207 - nornir.core.task - ERROR - Host 'router2': task 'netmiko_send_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/wheliver/.local/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wheliver/.local/lib/python3.12/site-packages/nornir_netmiko/tasks/netmiko_send_config.py", line 38, in netmiko_send_config
+    result = net_connect.send_config_set(config_commands=config_commands, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wheliver/.local/lib/python3.12/site-packages/netmiko/base_connection.py", line 111, in wrapper_decorator
+    return_val = func(self, *args, **kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wheliver/.local/lib/python3.12/site-packages/netmiko/base_connection.py", line 2319, in send_config_set
+    output += self.read_until_pattern(
+              ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wheliver/.local/lib/python3.12/site-packages/netmiko/base_connection.py", line 748, in read_until_pattern
+    raise ReadTimeout(msg)
+netmiko.exceptions.ReadTimeout: 
+
+Pattern not detected: 'description\\ Red\\ de\\ administración' in output.
+
+Things you might try to fix this:
+1. Adjust the regex pattern to better identify the terminating string. Note, in
+many situations the pattern is automatically based on the network device's prompt.
+2. Increase the read_timeout to a larger value.
+
+You can also look at the Netmiko session_log or debug log for more information.
+
+
+
+2024-11-10 16:46:03,412 - nornir.core.task - ERROR - Host 'router1': task 'netmiko_send_config' failed with traceback:
+Traceback (most recent call last):
+  File "/home/wheliver/.local/lib/python3.12/site-packages/nornir/core/task.py", line 99, in start
+    r = self.task(self, **self.params)
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wheliver/.local/lib/python3.12/site-packages/nornir_netmiko/tasks/netmiko_send_config.py", line 38, in netmiko_send_config
+    result = net_connect.send_config_set(config_commands=config_commands, **kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wheliver/.local/lib/python3.12/site-packages/netmiko/base_connection.py", line 111, in wrapper_decorator
+    return_val = func(self, *args, **kwargs)
+                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wheliver/.local/lib/python3.12/site-packages/netmiko/base_connection.py", line 2319, in send_config_set
+    output += self.read_until_pattern(
+              ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/home/wheliver/.local/lib/python3.12/site-packages/netmiko/base_connection.py", line 748, in read_until_pattern
+    raise ReadTimeout(msg)
+netmiko.exceptions.ReadTimeout: 
+
+Pattern not detected: 'description\\ Red\\ de\\ administración' in output.
+
+Things you might try to fix this:
+1. Adjust the regex pattern to better identify the terminating string. Note, in
+many situations the pattern is automatically based on the network device's prompt.
+2. Increase the read_timeout to a larger value.
+
+You can also look at the Netmiko session_log or debug log for more information.
+
+
+
+2024-11-10 16:51:14,890 - nornir.core - INFO - Running task 'apply_config' with args {} on 2 hosts
+2024-11-10 16:51:14,891 - nornir.core.task - DEBUG - Host 'router1': running task 'apply_config'
+2024-11-10 16:51:14,891 - nornir.core.task - DEBUG - Host 'router1': running task 'netmiko_send_config'
+2024-11-10 16:51:14,891 - nornir.core.task - DEBUG - Host 'router2': running task 'apply_config'
+2024-11-10 16:51:14,891 - nornir.core.task - DEBUG - Host 'router2': running task 'netmiko_send_config'

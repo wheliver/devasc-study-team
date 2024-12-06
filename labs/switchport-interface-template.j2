@@ -1,0 +1,13 @@
+! Configuracion Generada
+interface {{ interface }}
+  description Enlace hacia {{ server }} puerto {{ link }} para {{ purpose }}
+  switchport
+  {% if vlan == "trunk" -%}
+  switchport trunk encapsulation dot1q
+  switchport mode trunk
+  {% else -%}
+  switchport mode access
+  switchport access vlan {{ vlan }}
+  spanning-tree port type edge
+  {% endif -%}
+  no shutdown

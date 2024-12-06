@@ -1,0 +1,5 @@
+Interface,IP_Address,Subnet_Mask,Description,Static_Route,Routing_Protocol
+E0/0,10.0.0.1,255.255.255.0,Red interna,10.1.1.0 255.255.255.0 10.0.0.2,OSPF
+E0/1,10.0.1.1,255.255.255.0,WAN,10.2.2.0 255.255.255.0 10.0.1.2,RIP
+E0/2,10.0.2.1,255.255.255.0,Red externa,
+E0/3,10.0.3.1,255.255.255.0,Red de pruebas,
